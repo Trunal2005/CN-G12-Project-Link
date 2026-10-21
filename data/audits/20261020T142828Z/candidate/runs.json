@@ -1,0 +1,73 @@
+[
+  {
+    "id": "65bb7319d5dc4f35b75448be569cb8e5",
+    "policy": "historical",
+    "profile": "stable",
+    "seed": 500,
+    "purpose": "smoke",
+    "benchmark": true,
+    "duration_limit_s": 40,
+    "proof": {
+      "time": 39.615772,
+      "frames": 955
+    },
+    "ending_rule": "40 s wall clock after start returns",
+    "summary": {
+      "metric_version": "audit-v2",
+      "startup_s": 0.38349999999999995,
+      "rebuffer_s": 0,
+      "stall_count": 0,
+      "stall_intervals": [],
+      "open_stall_at_last_observation": false,
+      "rebuffer_ratio": 0.0,
+      "playback_observation_s": 39.67490000000037,
+      "rendered_bitrate_bps": 1619116.5894811656,
+      "quality_weighted_media_s": 39.618840000000006,
+      "quality_initial_assignments": 1,
+      "quality_switches": 3,
+      "switch_magnitude_bps": 2200000.0,
+      "rendered_callbacks": 4,
+      "requested_initial_assignments": 1,
+      "requested_quality_switches": 2,
+      "download_count": 24,
+      "download_mean_s": 1.0397541666668064,
+      "download_median_s": 1.3751000000005589,
+      "download_p95_s": 1.5595,
+      "unique_video_intervals": 25,
+      "replacement_intervals": 0,
+      "repeated_video_assets": 0,
+      "video_request_count": 25,
+      "init_requests": 5,
+      "client_retry_starts": 0,
+      "payload_bytes": 11469085,
+      "delivery_failures": 1,
+      "prediction_count": 24,
+      "prediction_mae_bps": 288620.6916599484,
+      "prediction_rmse_bps": 617627.7525041477,
+      "forest_prediction_count": 0,
+      "forest_mae_bps": null,
+      "forest_rmse_bps": null,
+      "predictor_decision_counts": {
+        "warmup EWMA": 5,
+        "EWMA": 20
+      },
+      "inference_mean_ms": 0.011999999955296516,
+      "browser_errors": 0,
+      "excluded_requests": 0,
+      "interacted": false,
+      "observed_s": 40.56840000000037,
+      "played_seconds": 39.630605,
+      "natural_end": false
+    },
+    "identities": {
+      "asset_fingerprint": "bundle-v2:ff3bf778eca735432709c7cbed130ece84a685a386229bf6bd291f2bc6ca1360",
+      "source_identity": "eda64a00243fcb5a8cc5cc5f30514470e9645935b90ab1f1430dfebd450835ee",
+      "controller_version": "shared-buffer-v2-append-only",
+      "model_checksum": "4629d8c36753afdc88dad71586ac52b59f8dc7a4019d0518307261b8e560b45e",
+      "common_settings_identity": "a922f2f5c018337535ac6a01097bb27099df313dc9f3d8226b037b0970ab1a19"
+    },
+    "external_attempts": [],
+    "page_errors": [],
+    "bad_responses": []
+  }
+]

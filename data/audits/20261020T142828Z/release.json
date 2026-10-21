@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-20T15:15:49.785077+00:00",
+  "source_identity": "3051b5e8b6e77f24a622408061fc32cb2fe54a7e5aa0aa13cb7690e59d59bc1a",
+  "benchmark_source_identity": "9806f3f2fafe6cd7b44b8a61f57a15e32c1fb15e8f9955d4d014fe3870fc5880",
+  "asset_fingerprint": "bundle-v2:ff3bf778eca735432709c7cbed130ece84a685a386229bf6bd291f2bc6ca1360",
+  "model_file_sha256": "cb98ce38c9350210b17eb83b1a05754f015cc591a91b28bbf48f1971969b449d",
+  "metric_version": "audit-v2.1",
+  "unchanged_adaptation_pacing_media_feature_sources": [
+    "backend/app/limiter.py",
+    "backend/app/profiles.py",
+    "backend/app/media.py",
+    "frontend/src/abr/core.ts",
+    "ml/features.py"
+  ],
+  "changes_after_matrix": [
+    "Initial requested-quality assignment is logged from the first actual video request; requested counters derive from network requests, not quality-change callbacks",
+    "API error badge uses an error colour",
+    "Cancellation unit test queues deterministically rather than assuming a 2 KiB grant stays pending across two timer sleeps"
+  ],
+  "note": "No estimator, ABR controller, pacing, media/model or buffer setting changed after the matched matrix. Frozen raw v2 summaries remain untouched; requested counter corrections are separate derived evidence."
+}

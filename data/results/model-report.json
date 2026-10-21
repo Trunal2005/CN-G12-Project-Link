@@ -1,0 +1,16 @@
+{
+  "train": {
+    "samples": 143,
+    "forest_mae_bps": 182197.50825901565,
+    "forest_rmse_bps": 341939.7611385301,
+    "ewma_mae_bps": 288872.4038703631,
+    "ewma_rmse_bps": 603213.5519280793
+  },
+  "validation": {
+    "samples": 53,
+    "forest_mae_bps": 407602.7759667945,
+    "forest_rmse_bps": 585951.5069860129,
+    "ewma_mae_bps": 450961.093839793,
+    "ewma_rmse_bps": 762922.5454691215
+  }
+}

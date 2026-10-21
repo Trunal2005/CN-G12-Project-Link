@@ -1,0 +1,218 @@
+[
+  {
+    "id": "6b02bcc30da945c9a91f26feb7274d97",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 2,
+    "derived_requested_switches": 3,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "acb64f826803470c8d924cae3c52a9d4",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 1,
+    "derived_requested_switches": 2,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "bd79b5783e504ea0b17aa1d297da0384",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 0,
+    "derived_requested_switches": 1,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "722742c29d094e189a61a004f8895e37",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 6,
+    "derived_requested_switches": 7,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "ddd7669b9af348b5aa649f333cce8d0e",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 4,
+    "derived_requested_switches": 5,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "f15ff6cd7b494909b6f8cfa33bfa21e8",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 3,
+    "derived_requested_switches": 4,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "201be2f4277f4858abbbf798df8fed4d",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 5,
+    "derived_requested_switches": 6,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "365e2cd3e1a74099b0ca2d2dfdc46ab0",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 5,
+    "derived_requested_switches": 6,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "c11441fff1f54d2e8a8644aa62b03888",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 4,
+    "derived_requested_switches": 5,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "b035ad0b4e2f4ccc8b1149a4b0cf120c",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 2,
+    "derived_requested_switches": 3,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "a0c2202c655f4d17bd9450fda869568f",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 1,
+    "derived_requested_switches": 2,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "6c9fc4c209194eeeb4bdc6b160af3024",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 0,
+    "derived_requested_switches": 1,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "2a0eb101156d49608bd7c54390395ca5",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 6,
+    "derived_requested_switches": 7,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "99c7e64715774026acb74dd0db7883ae",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 4,
+    "derived_requested_switches": 5,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "61ff7070265f4822a25f66a996f71853",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 3,
+    "derived_requested_switches": 4,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "1cc239de89dd449dacf632a1ed450116",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 3,
+    "derived_requested_switches": 4,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "2224179534f341e2b6b0c99655e22aa0",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 6,
+    "derived_requested_switches": 7,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "345cbb0abb3b423f8abe4f63d02fb79c",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 4,
+    "derived_requested_switches": 5,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "ed3b744b83384e0aa3655a17344ed6ac",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 2,
+    "derived_requested_switches": 3,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "73ece50d992d4fb3955fe81c2428f33e",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 1,
+    "derived_requested_switches": 2,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "e0e46eb490e8441ead745e5917ee205a",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 0,
+    "derived_requested_switches": 1,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "01f13ee2a0814a50967fe6e924229f2c",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 5,
+    "derived_requested_switches": 6,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "a2c1bae29eef4855a7ce37322f0e04a4",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 4,
+    "derived_requested_switches": 5,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "182c4928658e4fd4820d1997109ae618",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 3,
+    "derived_requested_switches": 4,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "7ac89da4b0b14c7692d91c6ddb246016",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 4,
+    "derived_requested_switches": 5,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "437811f613a74452bfd73dc580ef4de7",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 6,
+    "derived_requested_switches": 7,
+    "derived_requested_initial_assignments": 1
+  },
+  {
+    "id": "aee2027e0505428c8fe9d30c64ec5cd6",
+    "saved_metric_version": "audit-v2",
+    "derived_metric_version": "audit-v2.1",
+    "saved_requested_switches": 3,
+    "derived_requested_switches": 4,
+    "derived_requested_initial_assignments": 1
+  }
+]

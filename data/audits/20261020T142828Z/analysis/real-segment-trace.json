@@ -1,0 +1,111 @@
+{
+  "session": "ddd7669b9af348b5aa649f333cce8d0e",
+  "profile": "step",
+  "seed": 500,
+  "previous_observation": {
+    "kind": "segment",
+    "seq": 26,
+    "epoch": 0,
+    "decision_id": "0:4",
+    "asset": "chunk-0-00005.m4s",
+    "stream_type": "video",
+    "t": 1.5208000000007451,
+    "throughput": 3434607.73480663,
+    "duration": 0.181,
+    "size": 77708,
+    "start": 1.339800000000745,
+    "first_byte": 1.3585,
+    "media_start": 8.0,
+    "media_duration": 2.0,
+    "representation": "0",
+    "request_id": "chunk-0-00005.m4s:1.339800000000745",
+    "boundary": 4,
+    "timing_source": "ResourceTiming encodedBodySize / full request duration"
+  },
+  "forecast_decision": {
+    "kind": "decision",
+    "seq": 27,
+    "epoch": 0,
+    "decision_id": "0:5",
+    "controller_version": "shared-buffer-v2-append-only",
+    "t": 1.5244000000003726,
+    "value": 3385364.280178566,
+    "buffer": 7.268874,
+    "representation": "1",
+    "boundary": 5,
+    "predictor": "random forest",
+    "reason": "80% forecast less 80 kbps audio/overhead reserve",
+    "features": [
+      2951313.6209297194,
+      3802698.5074626864,
+      3501657.1130729313,
+      2157977.928085426,
+      3434607.73480663,
+      3169650.9808714786,
+      574862.2256990375,
+      120823.5284692276,
+      0.181,
+      0.004599999999627569,
+      77708.0
+    ],
+    "inference_ms": 0.09999999962747097,
+    "model_checksum": "4629d8c36753afdc88dad71586ac52b59f8dc7a4019d0518307261b8e560b45e"
+  },
+  "target_segment": {
+    "kind": "segment",
+    "seq": 32,
+    "epoch": 0,
+    "decision_id": "0:5",
+    "asset": "chunk-1-00006.m4s",
+    "stream_type": "video",
+    "t": 1.849,
+    "throughput": 3803496.1781275608,
+    "duration": 0.30090000000037254,
+    "size": 143059,
+    "start": 1.5480999999996274,
+    "first_byte": 1.5644000000003726,
+    "media_start": 10.0,
+    "media_duration": 2.0,
+    "representation": "1",
+    "request_id": "chunk-1-00006.m4s:1.5480999999996274",
+    "boundary": 5,
+    "timing_source": "ResourceTiming encodedBodySize / full request duration",
+    "model_checksum": "4629d8c36753afdc88dad71586ac52b59f8dc7a4019d0518307261b8e560b45e"
+  },
+  "server_delivery": [
+    {
+      "request_id": "17be562ee78c498189668ce6f26a4470",
+      "asset": "chunk-1-00006.m4s",
+      "bytes": 143059,
+      "status": "complete",
+      "range": [
+        0,
+        143058
+      ],
+      "start_s": 1.1120711999992636,
+      "duration_s": 0.2850952999997389
+    }
+  ],
+  "rendered_transition": {
+    "kind": "rendered",
+    "seq": 62,
+    "epoch": 0,
+    "media_time": 10.237483,
+    "t": 11.095900000000373,
+    "value": 600000.0,
+    "representation": "1"
+  },
+  "feature_names": [
+    "tp_lag5_bps",
+    "tp_lag4_bps",
+    "tp_lag3_bps",
+    "tp_lag2_bps",
+    "tp_lag1_bps",
+    "mean_bps",
+    "std_bps",
+    "trend_bps",
+    "last_duration_s",
+    "last_idle_s",
+    "last_bytes"
+  ]
+}

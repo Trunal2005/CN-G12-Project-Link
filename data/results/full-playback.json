@@ -1,0 +1,36 @@
+{
+  "sid": "8710b60a76a6427696ad60e9d892fb96",
+  "policy": "ml",
+  "profile": "stable",
+  "purpose": "full-clip smoke, separate from final matrix",
+  "proof": {
+    "time": 119.999999,
+    "duration": 119.999999,
+    "decoded_frames": 2880
+  },
+  "page_errors": [],
+  "external_attempts": [],
+  "summary": {
+    "startup_s": 0.6547999999998138,
+    "rebuffer_s": 0,
+    "stall_count": 0,
+    "stall_intervals": [],
+    "rebuffer_ratio": 0.0,
+    "rendered_bitrate_bps": 1096730.6039597474,
+    "quality_switches": 13,
+    "switch_magnitude_bps": 10700000.0,
+    "download_count": 75,
+    "download_mean_s": 0.6233573333333805,
+    "download_median_s": 0.6736000000005588,
+    "download_p95_s": 0.7725,
+    "payload_bytes": 21095064,
+    "delivery_failures": 0,
+    "prediction_count": 75,
+    "prediction_mae_bps": 597875.412427802,
+    "prediction_rmse_bps": 666972.8587791772,
+    "inference_mean_ms": 0.026666666629413763,
+    "browser_errors": 0,
+    "interacted": false,
+    "observed_s": 120.80309999999963
+  }
+}

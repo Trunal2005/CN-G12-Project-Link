@@ -1,0 +1,22 @@
+{
+  "samples": 466,
+  "forest_mae_bps": 399742.9633864456,
+  "forest_rmse_bps": 577644.4051067984,
+  "ewma_mae_bps": 325362.44503858144,
+  "ewma_rmse_bps": 612514.7030239293,
+  "session_ids": [
+    "e0dec4f4d0de403c970983795c3a0c94",
+    "ef0b747a2971436ebc3c3bdf7f38f8c7",
+    "f4256b9d3176452d831beddac80a61b0",
+    "3dd83ae724654e7d8197f5fa111bf2bc",
+    "6358b4b8cd64458284f9c4b6900911e4",
+    "a7e3baecca924dc78f19781a7d07fcfa",
+    "558c25d7a21f46bf9fceda482b939e33",
+    "ac82f7ab70894dd98afd1fd9e60fefe0",
+    "4cc10118fa1244288fc0d132c8bb1c53",
+    "e215aeb1b0cc4a77ae45690242c9ed2d",
+    "91ae5a3a10774781b3af77a17bac5c8c",
+    "719ee7d7acf94721897d5cc85cb0cff0"
+  ],
+  "frozen_model_checksum": "4629d8c36753afdc88dad71586ac52b59f8dc7a4019d0518307261b8e560b45e"
+}

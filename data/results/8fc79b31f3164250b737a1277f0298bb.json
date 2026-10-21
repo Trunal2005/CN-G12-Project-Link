@@ -1,0 +1,1357 @@
+{
+  "schema": "stallguard-v1",
+  "meta": {
+    "id": "8fc79b31f3164250b737a1277f0298bb",
+    "schema": "stallguard-v1",
+    "status": "finished",
+    "created_unix": 1792503842.403918,
+    "asset_id": "calibration",
+    "policy": "default",
+    "profile": "fluctuate",
+    "seed": 202,
+    "scale": 0.9,
+    "purpose": "validation",
+    "benchmark": true,
+    "summary": {
+      "startup_s": 1.4300999999996273,
+      "rebuffer_s": 0,
+      "stall_count": 0,
+      "stall_intervals": [],
+      "rebuffer_ratio": 0.0,
+      "rendered_bitrate_bps": 993789.3648509234,
+      "quality_switches": 4,
+      "switch_magnitude_bps": 2400000.0,
+      "download_count": 26,
+      "download_mean_s": 1.1777692307691592,
+      "download_median_s": 0.998649999999907,
+      "download_p95_s": 2.432700000000186,
+      "payload_bytes": 5784138,
+      "delivery_failures": 1,
+      "prediction_count": 0,
+      "prediction_mae_bps": null,
+      "prediction_rmse_bps": null,
+      "inference_mean_ms": null,
+      "browser_errors": 0,
+      "interacted": false,
+      "observed_s": 34.07010000000056
+    }
+  },
+  "events": [
+    {
+      "kind": "intent",
+      "t": 0.026400000000372528
+    },
+    {
+      "kind": "requested",
+      "t": 0.045700000000186265,
+      "reason": "ABR settings {\"limitBitrateByPortal\":false,\"usePixelRatioInLimitBitrateByPortal\":false,\"enableSupplementalPropertyAdaptationSetSwitching\":true,\"rules\":{\"throughputRule\":{\"active\":true},\"bolaRule\":{\"active\":true},\"insufficientBufferRule\":{\"active\":true,\"parameters\":{\"throughputSafetyFactor\":0.7,\"segmentIgnoreCount\":2}},\"switchHistoryRule\":{\"active\":true,\"parameters\":{\"sampleSize\":8,\"switchPercentageThreshold\":0.075}},\"droppedFramesRule\":{\"active\":false,\"parame"
+    },
+    {
+      "kind": "waiting",
+      "t": 0.13130000000074507,
+      "buffer": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 1.0565,
+      "value": 0.0,
+      "buffer": 0.0
+    },
+    {
+      "kind": "segment",
+      "t": 1.4321000000005588,
+      "throughput": 960868.6277525512,
+      "duration": 1.2986000000005589,
+      "size": 155973,
+      "start": 0.1335,
+      "first_byte": 0.14090000000037253,
+      "media_start": 0.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00001-0.1335",
+      "boundary": 0,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "playing",
+      "t": 1.4565,
+      "buffer": 1.918382
+    },
+    {
+      "kind": "rendered",
+      "t": 1.4631000000005587,
+      "value": 600000.0,
+      "representation": "1"
+    },
+    {
+      "kind": "sample",
+      "t": 2.046600000000559,
+      "value": 0.551546,
+      "buffer": 1.3684530000000001
+    },
+    {
+      "kind": "segment",
+      "t": 2.819300000000745,
+      "throughput": 965215.5016298442,
+      "duration": 1.3805,
+      "size": 166560,
+      "start": 1.438800000000745,
+      "first_byte": 1.4519000000003726,
+      "media_start": 2.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00002-1.438800000000745",
+      "boundary": 1,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 3.0467000000001865,
+      "value": 1.551665,
+      "buffer": 2.3736680000000003
+    },
+    {
+      "kind": "sample",
+      "t": 4.046400000000372,
+      "value": 2.551074,
+      "buffer": 1.448925
+    },
+    {
+      "kind": "segment",
+      "t": 4.092200000000187,
+      "throughput": 1005147.1400394477,
+      "duration": 1.2675,
+      "size": 159253,
+      "start": 2.824700000000186,
+      "first_byte": 2.8349000000003723,
+      "media_start": 4.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00003-2.824700000000186",
+      "boundary": 2,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 5.047200000000187,
+      "value": 3.550267,
+      "buffer": 2.449732
+    },
+    {
+      "kind": "segment",
+      "t": 5.289700000000186,
+      "throughput": 975505.750021138,
+      "duration": 1.1912999999998137,
+      "size": 145265,
+      "start": 4.098400000000373,
+      "first_byte": 4.109,
+      "media_start": 6.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00004-4.098400000000373",
+      "boundary": 3,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 6.047200000000187,
+      "value": 4.551221,
+      "buffer": 3.448778
+    },
+    {
+      "kind": "segment",
+      "t": 6.19,
+      "throughput": 1340418.0172135895,
+      "duration": 0.894699999999255,
+      "size": 149909,
+      "start": 5.295300000000745,
+      "first_byte": 5.306,
+      "media_start": 8.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00005-5.295300000000745",
+      "boundary": 4,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "segment",
+      "t": 6.999,
+      "throughput": 1424153.2910303113,
+      "duration": 0.8036999999992549,
+      "size": 143074,
+      "start": 6.195300000000745,
+      "first_byte": 6.208200000000186,
+      "media_start": 10.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00006-6.195300000000745",
+      "boundary": 5,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 7.046700000000186,
+      "value": 5.550825,
+      "buffer": 6.3745080000000005
+    },
+    {
+      "kind": "segment",
+      "t": 7.733600000000559,
+      "throughput": 1560235.777930089,
+      "duration": 0.7295,
+      "size": 142274,
+      "start": 7.004100000000559,
+      "first_byte": 7.015400000000373,
+      "media_start": 12.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00007-7.004100000000559",
+      "boundary": 6,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 8.0465,
+      "value": 6.551356,
+      "buffer": 7.448643000000001
+    },
+    {
+      "kind": "segment",
+      "t": 8.433,
+      "throughput": 1779046.521676986,
+      "duration": 0.6942999999998137,
+      "size": 154399,
+      "start": 7.738700000000186,
+      "first_byte": 7.750300000000745,
+      "media_start": 14.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00008-7.738700000000186",
+      "boundary": 7,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 9.04660000000056,
+      "value": 7.550559,
+      "buffer": 8.449440000000001
+    },
+    {
+      "kind": "segment",
+      "t": 9.115700000000187,
+      "throughput": 1942034.7979941587,
+      "duration": 0.6782000000001862,
+      "size": 164636,
+      "start": 8.4375,
+      "first_byte": 8.447900000000372,
+      "media_start": 16.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00009-8.4375",
+      "boundary": 8,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 10.046200000000185,
+      "value": 8.55071,
+      "buffer": 9.449288999999998
+    },
+    {
+      "kind": "requested",
+      "t": 10.121900000000373,
+      "value": 1200000.0,
+      "representation": "2"
+    },
+    {
+      "kind": "segment",
+      "t": 10.954700000000186,
+      "throughput": 2665829.552421827,
+      "duration": 0.8155,
+      "size": 271748,
+      "start": 10.139200000000185,
+      "first_byte": 10.150600000000559,
+      "media_start": 8.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00005-10.139200000000185",
+      "boundary": 9,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "rendered",
+      "t": 11.031300000000744,
+      "value": 1200000.0,
+      "representation": "2"
+    },
+    {
+      "kind": "sample",
+      "t": 11.046300000000745,
+      "value": 9.550761,
+      "buffer": 8.449238
+    },
+    {
+      "kind": "rendered",
+      "t": 11.5555,
+      "value": 600000.0,
+      "representation": "1"
+    },
+    {
+      "kind": "segment",
+      "t": 11.747600000000558,
+      "throughput": 2857440.8547436628,
+      "duration": 0.7862000000001863,
+      "size": 280815,
+      "start": 10.961400000000372,
+      "first_byte": 10.972200000000186,
+      "media_start": 10.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00006-10.961400000000372",
+      "boundary": 10,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "rendered",
+      "t": 11.820300000000746,
+      "value": 1200000.0,
+      "representation": "2"
+    },
+    {
+      "kind": "sample",
+      "t": 12.04660000000056,
+      "value": 10.551614,
+      "buffer": 7.448384999999998
+    },
+    {
+      "kind": "segment",
+      "t": 12.529700000000187,
+      "throughput": 2988961.790815074,
+      "duration": 0.7772999999998137,
+      "size": 290415,
+      "start": 11.752400000000373,
+      "first_byte": 11.763600000000558,
+      "media_start": 12.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00007-11.752400000000373",
+      "boundary": 11,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 13.046,
+      "value": 11.5503,
+      "buffer": 6.449698999999999
+    },
+    {
+      "kind": "segment",
+      "t": 13.375600000000558,
+      "throughput": 3062979.533554092,
+      "duration": 0.8404000000003725,
+      "size": 321766,
+      "start": 12.535200000000186,
+      "first_byte": 12.546400000000373,
+      "media_start": 14.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00008-12.535200000000186",
+      "boundary": 12,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 14.04660000000056,
+      "value": 12.55103,
+      "buffer": 5.448968999999998
+    },
+    {
+      "kind": "segment",
+      "t": 14.1855,
+      "throughput": 3012902.423865755,
+      "duration": 0.8045,
+      "size": 302985,
+      "start": 13.381,
+      "first_byte": 13.39110000000056,
+      "media_start": 16.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00009-13.381",
+      "boundary": 13,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 15.0465,
+      "value": 13.550758,
+      "buffer": 4.449240999999999
+    },
+    {
+      "kind": "segment",
+      "t": 15.13260000000056,
+      "throughput": 2877827.0557029177,
+      "duration": 0.9425,
+      "size": 339044,
+      "start": 14.190100000000559,
+      "first_byte": 14.199600000000558,
+      "media_start": 18.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00010-14.190100000000559",
+      "boundary": 14,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "segment",
+      "t": 16.017200000000187,
+      "throughput": 2508423.208191126,
+      "duration": 0.879,
+      "size": 275613,
+      "start": 15.138200000000186,
+      "first_byte": 15.150400000000372,
+      "media_start": 20.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00011-15.138200000000186",
+      "boundary": 15,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 16.047,
+      "value": 14.551498,
+      "buffer": 7.379167999999998
+    },
+    {
+      "kind": "segment",
+      "t": 17.015400000000373,
+      "throughput": 2188711.3350125942,
+      "duration": 0.9925,
+      "size": 271537,
+      "start": 16.022900000000373,
+      "first_byte": 16.03440000000037,
+      "media_start": 22.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00012-16.022900000000373",
+      "boundary": 16,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 17.045800000000746,
+      "value": 15.55045,
+      "buffer": 8.385549
+    },
+    {
+      "kind": "sample",
+      "t": 18.046800000000744,
+      "value": 16.551765,
+      "buffer": 7.448233999999999
+    },
+    {
+      "kind": "segment",
+      "t": 18.291100000000558,
+      "throughput": 1835578.9970875715,
+      "duration": 1.2702999999998137,
+      "size": 291467,
+      "start": 17.020800000000744,
+      "first_byte": 17.031800000000747,
+      "media_start": 24.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00013-17.020800000000744",
+      "boundary": 17,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 19.04660000000056,
+      "value": 17.550604,
+      "buffer": 8.449394999999999
+    },
+    {
+      "kind": "sample",
+      "t": 20.046200000000187,
+      "value": 18.550894,
+      "buffer": 7.449104999999999
+    },
+    {
+      "kind": "segment",
+      "t": 20.3985,
+      "throughput": 1225815.2923827916,
+      "duration": 2.101699999999255,
+      "size": 322037,
+      "start": 18.296800000000744,
+      "first_byte": 18.307900000000373,
+      "media_start": 26.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00014-18.296800000000744",
+      "boundary": 18,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 21.049900000000374,
+      "value": 19.554711,
+      "buffer": 8.370621999999997
+    },
+    {
+      "kind": "sample",
+      "t": 22.04610000000056,
+      "value": 20.550258,
+      "buffer": 7.4497409999999995
+    },
+    {
+      "kind": "segment",
+      "t": 22.836700000000185,
+      "throughput": 1001173.666475121,
+      "duration": 2.433399999999441,
+      "size": 304532,
+      "start": 20.403300000000744,
+      "first_byte": 20.414200000000186,
+      "media_start": 28.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00015-20.403300000000744",
+      "boundary": 19,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "requested",
+      "t": 22.841200000000185,
+      "value": 600000.0,
+      "representation": "1"
+    },
+    {
+      "kind": "sample",
+      "t": 23.0465,
+      "value": 21.550557,
+      "buffer": 8.380108999999997
+    },
+    {
+      "kind": "sample",
+      "t": 24.045900000000373,
+      "value": 22.550546,
+      "buffer": 7.449452999999998
+    },
+    {
+      "kind": "segment",
+      "t": 24.193800000000746,
+      "throughput": 955062.2468873888,
+      "duration": 1.3334000000003725,
+      "size": 159185,
+      "start": 22.86040000000037,
+      "first_byte": 22.874,
+      "media_start": 30.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00016-22.86040000000037",
+      "boundary": 20,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 25.046700000000186,
+      "value": 23.55055,
+      "buffer": 8.449448999999998
+    },
+    {
+      "kind": "segment",
+      "t": 25.455200000000186,
+      "throughput": 945808.9171974523,
+      "duration": 1.256,
+      "size": 148492,
+      "start": 24.199200000000186,
+      "first_byte": 24.209900000000374,
+      "media_start": 32.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00017-24.199200000000186",
+      "boundary": 21,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 26.046,
+      "value": 24.550681,
+      "buffer": 9.449318000000002
+    },
+    {
+      "kind": "sample",
+      "t": 27.04610000000056,
+      "value": 25.550909,
+      "buffer": 8.449090000000002
+    },
+    {
+      "kind": "segment",
+      "t": 27.666400000000372,
+      "throughput": 640356.2847934369,
+      "duration": 1.7065,
+      "size": 136596,
+      "start": 25.959900000000374,
+      "first_byte": 25.969400000000373,
+      "media_start": 34.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00018-25.959900000000374",
+      "boundary": 22,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 28.04660000000056,
+      "value": 26.551276,
+      "buffer": 9.374057
+    },
+    {
+      "kind": "sample",
+      "t": 29.047200000000185,
+      "value": 27.551975,
+      "buffer": 8.448024000000004
+    },
+    {
+      "kind": "sample",
+      "t": 30.045800000000746,
+      "value": 28.550162,
+      "buffer": 7.449837000000002
+    },
+    {
+      "kind": "segment",
+      "t": 30.104700000000186,
+      "throughput": 473663.00818017503,
+      "duration": 2.432700000000186,
+      "size": 144035,
+      "start": 27.672,
+      "first_byte": 27.683300000000745,
+      "media_start": 36.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00019-27.672",
+      "boundary": 23,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "requested",
+      "t": 30.1095,
+      "value": 300000.0,
+      "representation": "0"
+    },
+    {
+      "kind": "sample",
+      "t": 31.045900000000373,
+      "value": 29.549175,
+      "buffer": 8.450824
+    },
+    {
+      "kind": "segment",
+      "t": 31.43260000000056,
+      "throughput": 426111.70619739866,
+      "duration": 1.307,
+      "size": 69616,
+      "start": 30.12560000000056,
+      "first_byte": 30.1355,
+      "media_start": 38.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00020-30.12560000000056",
+      "boundary": 24,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "rendered",
+      "t": 31.7415,
+      "value": 600000.0,
+      "representation": "1"
+    },
+    {
+      "kind": "sample",
+      "t": 32.04710000000056,
+      "value": 30.552023,
+      "buffer": 9.383976000000004
+    },
+    {
+      "kind": "segment",
+      "t": 32.94270000000019,
+      "throughput": 659633.7579619057,
+      "duration": 1.0047999999998138,
+      "size": 82850,
+      "start": 31.937900000000372,
+      "first_byte": 31.945200000000185,
+      "media_start": 40.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00021-31.937900000000372",
+      "boundary": 25,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 33.047,
+      "value": 31.550592,
+      "buffer": 10.369406999999995
+    },
+    {
+      "kind": "sample",
+      "t": 34.046200000000184,
+      "value": 32.55027,
+      "buffer": 9.449729000000005
+    },
+    {
+      "kind": "ended",
+      "t": 34.07010000000056,
+      "reason": "session finished"
+    }
+  ],
+  "delivery": [
+    {
+      "request_id": "2dfb7af086fc4d6da0de3424687edfbb",
+      "asset": "init-1.mp4",
+      "bytes": 833,
+      "status": "complete",
+      "range": [
+        0,
+        832
+      ],
+      "start_s": 0.0,
+      "duration_s": 0.01739350000025297
+    },
+    {
+      "request_id": "e815136095854f168ebd500e253276fd",
+      "asset": "init-4.mp4",
+      "bytes": 764,
+      "status": "complete",
+      "range": [
+        0,
+        763
+      ],
+      "start_s": 0.0032183000002987683,
+      "duration_s": 0.027106200000162062
+    },
+    {
+      "request_id": "5a512ccc7e8f49a8aafc852dec65ffcb",
+      "asset": "chunk-4-00001.m4s",
+      "bytes": 16290,
+      "status": "complete",
+      "range": [
+        0,
+        16289
+      ],
+      "start_s": 0.04319649999979447,
+      "duration_s": 0.2359312000007776
+    },
+    {
+      "request_id": "e200c66b024b48648124307abc249f67",
+      "asset": "chunk-1-00001.m4s",
+      "bytes": 155973,
+      "status": "complete",
+      "range": [
+        0,
+        155972
+      ],
+      "start_s": 0.03377670000008948,
+      "duration_s": 1.2910173000000214
+    },
+    {
+      "request_id": "fe03782052fe4337bf565cfb9404c6e9",
+      "asset": "chunk-4-00002.m4s",
+      "bytes": 16646,
+      "status": "complete",
+      "range": [
+        0,
+        16645
+      ],
+      "start_s": 1.8075826000003872,
+      "duration_s": 0.2635119999995368
+    },
+    {
+      "request_id": "88b4981912de4de388ac2533008ba03a",
+      "asset": "chunk-1-00002.m4s",
+      "bytes": 166560,
+      "status": "complete",
+      "range": [
+        0,
+        166559
+      ],
+      "start_s": 1.3445188000005146,
+      "duration_s": 1.3666577999993024
+    },
+    {
+      "request_id": "aea4be3ef5fe4c0c96f4b23808b9963b",
+      "asset": "chunk-4-00003.m4s",
+      "bytes": 16612,
+      "status": "complete",
+      "range": [
+        0,
+        16611
+      ],
+      "start_s": 3.0893732000004093,
+      "duration_s": 0.2564985999997589
+    },
+    {
+      "request_id": "cc94ed21096c45a4a333297983dc70fe",
+      "asset": "chunk-1-00003.m4s",
+      "bytes": 159253,
+      "status": "complete",
+      "range": [
+        0,
+        159252
+      ],
+      "start_s": 2.727588900000228,
+      "duration_s": 1.257391699999971
+    },
+    {
+      "request_id": "a81ed2c9c722427693351575e124b0e5",
+      "asset": "chunk-4-00004.m4s",
+      "bytes": 16656,
+      "status": "complete",
+      "range": [
+        0,
+        16655
+      ],
+      "start_s": 4.364008800000192,
+      "duration_s": 0.25557779999962804
+    },
+    {
+      "request_id": "2c12bb56a0164ce9970f779796c3b486",
+      "asset": "chunk-1-00004.m4s",
+      "bytes": 145265,
+      "status": "complete",
+      "range": [
+        0,
+        145264
+      ],
+      "start_s": 4.00169840000035,
+      "duration_s": 1.1806526999998823
+    },
+    {
+      "request_id": "aa230b028a9f4a808b1809b344ed07b6",
+      "asset": "chunk-4-00005.m4s",
+      "bytes": 16454,
+      "status": "complete",
+      "range": [
+        0,
+        16453
+      ],
+      "start_s": 5.637514199999714,
+      "duration_s": 0.18122149999999237
+    },
+    {
+      "request_id": "9c5b5e103aa447389d0b14bd253b19c4",
+      "asset": "chunk-1-00005.m4s",
+      "bytes": 149909,
+      "status": "complete",
+      "range": [
+        0,
+        149908
+      ],
+      "start_s": 5.198617699999886,
+      "duration_s": 0.8841136000000915
+    },
+    {
+      "request_id": "109f1589beeb4df9b47be5978f515e4c",
+      "asset": "chunk-4-00006.m4s",
+      "bytes": 16552,
+      "status": "complete",
+      "range": [
+        0,
+        16551
+      ],
+      "start_s": 6.335568000000421,
+      "duration_s": 0.18394790000002104
+    },
+    {
+      "request_id": "f7471810e6d9492ca962bd1d9616c07c",
+      "asset": "chunk-1-00006.m4s",
+      "bytes": 143074,
+      "status": "complete",
+      "range": [
+        0,
+        143073
+      ],
+      "start_s": 6.100991100000101,
+      "duration_s": 0.7907145999997738
+    },
+    {
+      "request_id": "f9a6d6edb6ee46668cf931a2d91c8114",
+      "asset": "chunk-4-00007.m4s",
+      "bytes": 16700,
+      "status": "complete",
+      "range": [
+        0,
+        16699
+      ],
+      "start_s": 7.037629399999787,
+      "duration_s": 0.16812060000029305
+    },
+    {
+      "request_id": "f452c75d9da7468885d081a5349d0fc5",
+      "asset": "chunk-1-00007.m4s",
+      "bytes": 142274,
+      "status": "complete",
+      "range": [
+        0,
+        142273
+      ],
+      "start_s": 6.908035899999959,
+      "duration_s": 0.718456999999944
+    },
+    {
+      "request_id": "d189355d95cf432d882a5944e1347897",
+      "asset": "chunk-4-00008.m4s",
+      "bytes": 16634,
+      "status": "complete",
+      "range": [
+        0,
+        16633
+      ],
+      "start_s": 7.721056000000317,
+      "duration_s": 0.15394310000010591
+    },
+    {
+      "request_id": "6b84950069544133949563459f551eda",
+      "asset": "chunk-1-00008.m4s",
+      "bytes": 154399,
+      "status": "complete",
+      "range": [
+        0,
+        154398
+      ],
+      "start_s": 7.643000500000198,
+      "duration_s": 0.6823876999997083
+    },
+    {
+      "request_id": "ffa78ebaaa754dc4bdad4a346e5fa1fd",
+      "asset": "chunk-4-00009.m4s",
+      "bytes": 16489,
+      "status": "complete",
+      "range": [
+        0,
+        16488
+      ],
+      "start_s": 8.390723999999864,
+      "duration_s": 0.13565720000042347
+    },
+    {
+      "request_id": "94c531dea6d046098710659fa0050df6",
+      "asset": "chunk-1-00009.m4s",
+      "bytes": 164636,
+      "status": "complete",
+      "range": [
+        0,
+        164635
+      ],
+      "start_s": 8.340655300000435,
+      "duration_s": 0.6677970000000641
+    },
+    {
+      "request_id": "02834f488bce452e9a67f02df3a871bd",
+      "asset": "chunk-4-00010.m4s",
+      "bytes": 16655,
+      "status": "complete",
+      "range": [
+        0,
+        16654
+      ],
+      "start_s": 9.040009999999711,
+      "duration_s": 0.04614500000025146
+    },
+    {
+      "request_id": "d31e218401e2452981592083a0a4b9b4",
+      "asset": "init-2.mp4",
+      "bytes": 837,
+      "status": "complete",
+      "range": [
+        0,
+        836
+      ],
+      "start_s": 10.027594299999691,
+      "duration_s": 0.0007472000006600865
+    },
+    {
+      "request_id": "ddcf81e1193041b9955ea2c90daf1085",
+      "asset": "chunk-2-00005.m4s",
+      "bytes": 271748,
+      "status": "complete",
+      "range": [
+        0,
+        271747
+      ],
+      "start_s": 10.043332299999747,
+      "duration_s": 0.8037425000002258
+    },
+    {
+      "request_id": "1f83c9cffdd049a296643f3d346b4aab",
+      "asset": "chunk-2-00006.m4s",
+      "bytes": 280815,
+      "status": "complete",
+      "range": [
+        0,
+        280814
+      ],
+      "start_s": 10.864898100000573,
+      "duration_s": 0.7754787999992914
+    },
+    {
+      "request_id": "8a7575200d4d4f458ebf61d298cee2d6",
+      "asset": "chunk-2-00007.m4s",
+      "bytes": 290415,
+      "status": "complete",
+      "range": [
+        0,
+        290414
+      ],
+      "start_s": 11.65625960000034,
+      "duration_s": 0.7661293000001024
+    },
+    {
+      "request_id": "afe2116ee59e49e0817571914c182e19",
+      "asset": "chunk-2-00008.m4s",
+      "bytes": 321766,
+      "status": "complete",
+      "range": [
+        0,
+        321765
+      ],
+      "start_s": 12.439078399999744,
+      "duration_s": 0.8291029000001799
+    },
+    {
+      "request_id": "e0a9fc9f5b2244c38d02813ea47f6c17",
+      "asset": "chunk-2-00009.m4s",
+      "bytes": 302985,
+      "status": "complete",
+      "range": [
+        0,
+        302984
+      ],
+      "start_s": 13.283821400000306,
+      "duration_s": 0.7943279999999504
+    },
+    {
+      "request_id": "cabea3cc68ee49cd8084a8abea4a906d",
+      "asset": "chunk-2-00010.m4s",
+      "bytes": 339044,
+      "status": "complete",
+      "range": [
+        0,
+        339043
+      ],
+      "start_s": 14.092203600000175,
+      "duration_s": 0.9331117000001541
+    },
+    {
+      "request_id": "341c137f42bd478aa49458beca274440",
+      "asset": "chunk-4-00011.m4s",
+      "bytes": 16719,
+      "status": "complete",
+      "range": [
+        0,
+        16718
+      ],
+      "start_s": 15.11965969999983,
+      "duration_s": 0.10832300000038231
+    },
+    {
+      "request_id": "92fd2ec209a24bda8a248e8dee50c263",
+      "asset": "chunk-2-00011.m4s",
+      "bytes": 275613,
+      "status": "complete",
+      "range": [
+        0,
+        275612
+      ],
+      "start_s": 15.043024600000535,
+      "duration_s": 0.8669726999996783
+    },
+    {
+      "request_id": "d59952e5ad5d42e1b84c48f57bf6a82c",
+      "asset": "chunk-4-00012.m4s",
+      "bytes": 16685,
+      "status": "complete",
+      "range": [
+        0,
+        16684
+      ],
+      "start_s": 16.246852500000386,
+      "duration_s": 0.11800339999990683
+    },
+    {
+      "request_id": "40beb339b0014efa97c151f3878bbe5a",
+      "asset": "chunk-2-00012.m4s",
+      "bytes": 271537,
+      "status": "complete",
+      "range": [
+        0,
+        271536
+      ],
+      "start_s": 15.927050899999813,
+      "duration_s": 0.9809248000001389
+    },
+    {
+      "request_id": "37e05e2f844e47efb8e652e5b7513347",
+      "asset": "chunk-4-00013.m4s",
+      "bytes": 16499,
+      "status": "complete",
+      "range": [
+        0,
+        16498
+      ],
+      "start_s": 17.381608800000322,
+      "duration_s": 0.13381529999969644
+    },
+    {
+      "request_id": "caa59c15cc884781ba0e828567efec9e",
+      "asset": "chunk-2-00013.m4s",
+      "bytes": 291467,
+      "status": "complete",
+      "range": [
+        0,
+        291466
+      ],
+      "start_s": 16.924394100000427,
+      "duration_s": 1.2594208000000435
+    },
+    {
+      "request_id": "e42bef13cc6b40cf84bf89585773233d",
+      "asset": "chunk-4-00014.m4s",
+      "bytes": 16750,
+      "status": "complete",
+      "range": [
+        0,
+        16749
+      ],
+      "start_s": 18.5338370999998,
+      "duration_s": 0.1794318000002022
+    },
+    {
+      "request_id": "427c61245117408f806f8a9147b9af37",
+      "asset": "chunk-2-00014.m4s",
+      "bytes": 322037,
+      "status": "complete",
+      "range": [
+        0,
+        322036
+      ],
+      "start_s": 18.200706499999797,
+      "duration_s": 2.090444700000262
+    },
+    {
+      "request_id": "eb5894aa85794fa2a21a6a30a52b2a0f",
+      "asset": "chunk-4-00015.m4s",
+      "bytes": 16657,
+      "status": "complete",
+      "range": [
+        0,
+        16656
+      ],
+      "start_s": 20.73776700000053,
+      "duration_s": 0.2681808999996065
+    },
+    {
+      "request_id": "474076bbdb304ae88588e840af0efbc1",
+      "asset": "chunk-2-00015.m4s",
+      "bytes": 304532,
+      "status": "complete",
+      "range": [
+        0,
+        304531
+      ],
+      "start_s": 20.306939300000522,
+      "duration_s": 2.4224404999995386
+    },
+    {
+      "request_id": "ade306a61a7444f680a871413fe2635e",
+      "asset": "init-1.mp4",
+      "bytes": 833,
+      "status": "complete",
+      "range": [
+        0,
+        832
+      ],
+      "start_s": 22.74756679999973,
+      "duration_s": 0.0010657000002538553
+    },
+    {
+      "request_id": "119a63acea6a4a439ba33036306a0b65",
+      "asset": "chunk-4-00016.m4s",
+      "bytes": 16687,
+      "status": "complete",
+      "range": [
+        0,
+        16686
+      ],
+      "start_s": 23.02532770000016,
+      "duration_s": 0.2687531999999919
+    },
+    {
+      "request_id": "e4eec5d8962345fcb7d42273f9fb200a",
+      "asset": "chunk-1-00016.m4s",
+      "bytes": 159185,
+      "status": "complete",
+      "range": [
+        0,
+        159184
+      ],
+      "start_s": 22.766692500000318,
+      "duration_s": 1.3192566999996416
+    },
+    {
+      "request_id": "b4df9d19c5f44a088bd365b5e7a58572",
+      "asset": "chunk-4-00017.m4s",
+      "bytes": 16465,
+      "status": "complete",
+      "range": [
+        0,
+        16464
+      ],
+      "start_s": 24.311525600000095,
+      "duration_s": 0.2716739999996207
+    },
+    {
+      "request_id": "fe7849ffdf3641a0ac6c07fff7e0b4bc",
+      "asset": "chunk-1-00017.m4s",
+      "bytes": 148492,
+      "status": "complete",
+      "range": [
+        0,
+        148491
+      ],
+      "start_s": 24.102571999999782,
+      "duration_s": 1.2453223000002254
+    },
+    {
+      "request_id": "3e785e262a054a3cb6014138686eb858",
+      "asset": "chunk-4-00018.m4s",
+      "bytes": 16725,
+      "status": "complete",
+      "range": [
+        0,
+        16724
+      ],
+      "start_s": 25.598845800000163,
+      "duration_s": 0.10977829999956157
+    },
+    {
+      "request_id": "ad92f1fb11ea4648b34ceed5f8a7beac",
+      "asset": "chunk-1-00018.m4s",
+      "bytes": 136596,
+      "status": "complete",
+      "range": [
+        0,
+        136595
+      ],
+      "start_s": 25.862070099999983,
+      "duration_s": 1.6964888000002247
+    },
+    {
+      "request_id": "0616991acb184d60b398321e7b30b788",
+      "asset": "chunk-4-00019.m4s",
+      "bytes": 16673,
+      "status": "complete",
+      "range": [
+        0,
+        16672
+      ],
+      "start_s": 27.725348300000405,
+      "duration_s": 0.527854699999807
+    },
+    {
+      "request_id": "883394acd1c54a2c88b8d1cff23147f6",
+      "asset": "chunk-1-00019.m4s",
+      "bytes": 144035,
+      "status": "complete",
+      "range": [
+        0,
+        144034
+      ],
+      "start_s": 27.5759192000005,
+      "duration_s": 2.4214438999997583
+    },
+    {
+      "request_id": "eb7432f9c6c948c789bdc7f998c6788d",
+      "asset": "init-0.mp4",
+      "bytes": 837,
+      "status": "complete",
+      "range": [
+        0,
+        836
+      ],
+      "start_s": 30.013965300000564,
+      "duration_s": 0.0008648999992146855
+    },
+    {
+      "request_id": "eef8c262fa9b409c8f14d0f4788522b9",
+      "asset": "chunk-4-00020.m4s",
+      "bytes": 16724,
+      "status": "complete",
+      "range": [
+        0,
+        16723
+      ],
+      "start_s": 30.276314300000195,
+      "duration_s": 0.5308981999996831
+    },
+    {
+      "request_id": "fe43bf809dc048caa4d6b847c9c0c5b8",
+      "asset": "chunk-0-00020.m4s",
+      "bytes": 69616,
+      "status": "complete",
+      "range": [
+        0,
+        69615
+      ],
+      "start_s": 30.02826069999992,
+      "duration_s": 1.2968337000002066
+    },
+    {
+      "request_id": "a57d2119e99846e4a838091e823723f2",
+      "asset": "chunk-4-00021.m4s",
+      "bytes": 16481,
+      "status": "complete",
+      "range": [
+        0,
+        16480
+      ],
+      "start_s": 31.83158739999999,
+      "duration_s": 0.414340500000435
+    },
+    {
+      "request_id": "d37ea6cac2f646a0a6fd458d752e3f7d",
+      "asset": "chunk-0-00021.m4s",
+      "bytes": 82850,
+      "status": "complete",
+      "range": [
+        0,
+        82849
+      ],
+      "start_s": 31.837948500000493,
+      "duration_s": 0.9974363999999696
+    },
+    {
+      "request_id": "efb20165653d45439630c2e2acb50a20",
+      "asset": "chunk-4-00022.m4s",
+      "bytes": 16725,
+      "status": "complete",
+      "range": [
+        0,
+        16724
+      ],
+      "start_s": 33.263630500000545,
+      "duration_s": 0.11490770000000339
+    },
+    {
+      "request_id": "62d72fcb62504f619635f1bbbbcfe9d0",
+      "asset": "chunk-0-00022.m4s",
+      "bytes": 20480,
+      "status": "aborted",
+      "range": [
+        0,
+        74452
+      ],
+      "start_s": 33.85287210000024,
+      "duration_s": 0.12093639999966399
+    }
+  ]
+}

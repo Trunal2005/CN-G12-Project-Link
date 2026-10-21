@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Evidence hashes refer to exact bytes, including original line endings.
+data/** -text -whitespace
+*.png binary
+media/.gitkeep -text

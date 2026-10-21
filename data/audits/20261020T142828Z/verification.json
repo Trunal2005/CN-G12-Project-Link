@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-20",
+  "verdict": "DEMO READY WITH LIMITATIONS",
+  "preservation": {
+    "baseline_archive": "baseline.zip",
+    "original_files_archived": 581,
+    "protected_files_checked": 534,
+    "media_or_model_regenerated_or_retrained": false,
+    "legacy_append_only_exception": "One previously open paused browser appended 1849 telemetry bytes before old-server shutdown. Original prefix remains archived; see frozen.json and legacy-appended-events.jsonl."
+  },
+  "executed": [
+    {"command":"python data/audits/20261020T142828Z/baseline_probe.py","exit_code":0,"outcome":"Reproduced 9.7–10.0% pacing underdelivery and 26 stable rendered transitions on the current bundle"},
+    {"command":"python scripts/audit_experiments.py transport --out data/audits/20261020T142828Z","exit_code":0,"outcome":"0.24–0.35% calibration underdelivery; shared mixed/ranged/repeated bytes; in-flight drop; cancellation recovery; unshaped health responsiveness"},
+    {"command":"python scripts/audit_experiments.py candidate --out data/audits/20261020T142828Z","exit_code":0,"outcome":"40 s historical/stable candidate: 3 rendered transitions, 25 total video requests, no stalls"},
+    {"command":"python scripts/audit_browser.py --out data/audits/20261020T142828Z/ui-r2","exit_code":0,"outcome":"Actual UI, parsed exports, missing/invalid/valid model, runtime sklearn parity, default isolation, pause/seek, refresh partial, recoverable injected API failure, desktop/phone/reduced motion"},
+    {"command":"python scripts/prepare_media.py --verify-only","exit_code":0,"outcome":"Read-only FFprobe passed; media/model hashes unchanged"},
+    {"command":"Actual MP4 box and FFprobe inspection","exit_code":0,"outcome":"All 240 video tfdt timestamps aligned; four H.264 resolutions and first-fragment keyframes verified"},
+    {"command":"python scripts/audit_experiments.py full --out data/audits/20261020T142828Z","exit_code":0,"outcome":"Frozen comparison implementation reached native ended, 2880 frames, 120 s, zero stalls, 60 video requests"},
+    {"command":"python scripts/audit_experiments.py matrix --out data/audits/20261020T142828Z --seconds 40 --repetitions 3","exit_code":0,"outcome":"27 sequential matched runs; all expected identities equal; no page errors, unexpected HTTP failures, external requests or stalls"},
+    {"command":"python scripts/audit_analysis.py --out data/audits/20261020T142828Z","exit_code":0,"outcome":"525 causal rows; 179 runtime forest forecasts exactly matched sklearn; raw summaries preserved; corrected requested counters separate"},
+    {"command":"PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -u -m pytest tests -q","exit_code":0,"outcome":"Final suite: 16 passed after requested-initial-assignment correction and deterministic queued-cancellation test"},
+    {"command":"npm --prefix frontend test","exit_code":0,"outcome":"7 passed, including 124 Python/TypeScript forest vectors, hysteresis/idempotence, forecast influence, ranges/model/compatibility checks"},
+    {"command":"npm --prefix frontend run build","exit_code":0,"outcome":"TypeScript/Vite passed; existing large dash.js bundle warning"},
+    {"command":"python -m compileall -q backend ml scripts tests","exit_code":0,"outcome":"Python syntax checks passed"},
+    {"command":"python scripts/audit_experiments.py full --base-url http://127.0.0.1:8000 --out data/audits/20261020T142828Z/release-check","exit_code":0,"outcome":"Final v2.1 release: natural ended at 119.999999 s, 2880 frames, zero stalls, 60 requests; requested and rendered initial assignment 1, transitions 2 each"},
+    {"command":"python scripts/audit_compare.py --base-url http://127.0.0.1:8000 --out data/audits/20261020T142828Z","exit_code":0,"outcome":"Exact professor selection: three finished fluctuate/seed 502 runs; no compatibility warning; parsed JSON of 3 sessions and CSV of 4 rows; responsive; no page errors or external attempts"}
+  ],
+  "observed_failures_and_resolution": [
+    {"check":"First repaired UI comparison test","outcome":"Failed because asynchronous selection reverted checkbox state; fixed immediate selection with response versioning; ui-r2 passed"},
+    {"check":"Read-only probe under restricted sandbox","outcome":"Temporary file permission failure; approved execution passed without altering frozen assets"},
+    {"check":"Requested initial quality regression","outcome":"Expected failure: saved counter 1 vs actual request sequence 0→1→2 requiring 2 transitions; v2.1 correction passed"},
+    {"check":"One cancellation unit run","outcome":"2 KiB task completed before cancellation across Windows timer sleeps; deterministic queued task removed test race; real in-flight HTTP cancellation already passed"},
+    {"check":"Abrupt test-browser close","outcome":"Windows asyncio connection-reset callback observed; subsequent requests and cleanup passed"}
+  ],
+  "not_executed": ["Fresh virtual-environment setup installation", "macOS/Linux", "Other browsers", "OS-wide airplane mode", "Three-repetition full-duration policy matrix", "Real WAN/packet-loss/TCP-control experiments"],
+  "versions": "versions.json",
+  "measured_source": "frozen.json",
+  "final_logging_only_release": "release.json"
+}

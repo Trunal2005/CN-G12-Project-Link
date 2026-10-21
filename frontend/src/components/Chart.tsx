@@ -1,0 +1,7 @@
+const fmt=(n:any,d=1)=>n==null||!Number.isFinite(n)?'—':Number(n).toFixed(d);
+export function Chart({points,field,color,label,unit,max}:{points:any[],field:string,color:string,label:string,unit:string,max?:number}){
+ const values=points.flatMap(p=>field==='throughput'?[p[field],p.forecast]:[p[field]]).filter(Number.isFinite),top=max??Math.max(1,...values)*1.15;
+ const x=(p:any)=>(p.t-(points[0]?.t??0))/Math.max(.001,(points.at(-1)?.t??0)-(points[0]?.t??0))*600;
+ const path=(key:string)=>{let first=true;return points.map(p=>Number.isFinite(p[key])?`${first?(first=false,'M'):'L'} ${x(p)} ${130-p[key]/top*120}`:'').join(' ');};
+ return <div className="chart"><div className="charttitle"><span>{label}</span><small>{values.length?`${fmt(top/(unit==='Mbps'?1e6:1))} ${unit}`:'Awaiting measurements'}</small></div><svg viewBox="0 0 600 150" role="img" aria-label={label} preserveAspectRatio="none">{[10,50,90,130].map(y=><line key={y} x1="0" x2="600" y1={y} y2={y} stroke="#ffffff0c"/>)}{points.map((p,i)=>p.stalled?<line key={i} x1={x(p)} x2={x(p)} y1="0" y2="135" stroke="#f8b45f66"/>:null)}<path d={path(field)} stroke={color} strokeWidth="2.5" fill="none"/>{field==='throughput'&&<path d={path('forecast')} stroke="#8ae5ba" strokeDasharray="5 5" strokeWidth="2" fill="none"/>}</svg><div className="axis"><span>{fmt(points[0]?.t,0)} s</span><span>Elapsed session time</span><span>{fmt(points.at(-1)?.t,0)} s</span></div></div>;
+}

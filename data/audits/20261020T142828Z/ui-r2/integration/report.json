@@ -1,0 +1,69 @@
+{
+  "stop_final_sample": {
+    "id": "e86a0d65a8964b5a812e11e63c9ae831",
+    "time_before_click": 3.414408,
+    "saved_played_s": 3.476062,
+    "summary_recomputed_equal": true
+  },
+  "fallback_and_real_forest": {
+    "missing_id": "01917bbd79a3439192003a17ee0ca604",
+    "invalid_id": "bfe9b1e3127d42cc9f5e88f96642ce4d",
+    "valid_id": "dd698e1948574b22b118ea2af98687dd",
+    "actual_forest_vectors_checked": 3,
+    "causal_association_checked": true
+  },
+  "default_after_custom": {
+    "id": "d7ca486c97e6430594099541654d6484",
+    "custom_rule_count": 0,
+    "pause_seek_excluded_from_stalls": true
+  },
+  "refresh_partial_id": "9ac4bc0ed15e47ab982c16fc3def3ac7",
+  "recoverable_create_error": true,
+  "comparison_exports_parsed": true,
+  "page_map_observed": {
+    "Playback Lab": {
+      "heading": "Every segment. A smarter decision.",
+      "buttons": [
+        "\u25c9 Playback Lab",
+        "\u25a5 Compare Sessions",
+        "\u2318 How It Works",
+        "\u25b7 Start new session",
+        "\u25a1 Stop & save",
+        "\u2193 Export JSON"
+      ]
+    },
+    "Compare Sessions": {
+      "heading": "Let the measurements speak.",
+      "buttons": [
+        "\u25c9 Playback Lab",
+        "\u25a5 Compare Sessions",
+        "\u2318 How It Works",
+        "Refresh",
+        "\u2193 Comparison JSON",
+        "\u2193 Summary CSV"
+      ]
+    },
+    "How It Works": {
+      "heading": "From bytes to better decisions.",
+      "buttons": [
+        "\u25c9 Playback Lab",
+        "\u25a5 Compare Sessions",
+        "\u2318 How It Works"
+      ]
+    }
+  },
+  "reduced_motion": true,
+  "low_effects": true,
+  "external_attempts": [],
+  "page_errors": [],
+  "http_errors_including_injected": [
+    [
+      "http://127.0.0.1:8002/api/models/current",
+      404
+    ],
+    [
+      "http://127.0.0.1:8002/api/sessions",
+      500
+    ]
+  ]
+}

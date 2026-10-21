@@ -1,0 +1,2075 @@
+{
+  "schema": "stallguard-v1",
+  "meta": {
+    "id": "94fa53b958034d5180c4332594145197",
+    "schema": "stallguard-v1",
+    "status": "finished",
+    "created_unix": 1792503668.2221723,
+    "asset_id": "calibration",
+    "policy": "historical",
+    "profile": "fluctuate",
+    "seed": 103,
+    "scale": 0.7,
+    "purpose": "train",
+    "benchmark": true,
+    "summary": {
+      "startup_s": 1.5237999999998137,
+      "rebuffer_s": 0,
+      "stall_count": 0,
+      "stall_intervals": [],
+      "rebuffer_ratio": 0.0,
+      "rendered_bitrate_bps": 553061.086657344,
+      "quality_switches": 4,
+      "switch_magnitude_bps": 1800000.0,
+      "download_count": 29,
+      "download_mean_s": 1.1012413793102485,
+      "download_median_s": 0.8489000000003726,
+      "download_p95_s": 2.3019000000003724,
+      "payload_bytes": 4247625,
+      "delivery_failures": 1,
+      "prediction_count": 29,
+      "prediction_mae_bps": 203409.97961046066,
+      "prediction_rmse_bps": 274243.29076910624,
+      "inference_mean_ms": 0.013333333283662796,
+      "browser_errors": 0,
+      "interacted": false,
+      "observed_s": 34.070200000000185
+    }
+  },
+  "events": [
+    {
+      "kind": "intent",
+      "t": 0.028
+    },
+    {
+      "kind": "requested",
+      "t": 0.047,
+      "reason": "ABR settings {\"limitBitrateByPortal\":false,\"usePixelRatioInLimitBitrateByPortal\":false,\"enableSupplementalPropertyAdaptationSetSwitching\":true,\"rules\":{\"throughputRule\":{\"active\":false},\"bolaRule\":{\"active\":false},\"insufficientBufferRule\":{\"active\":false,\"parameters\":{\"throughputSafetyFactor\":0.7,\"segmentIgnoreCount\":2}},\"switchHistoryRule\":{\"active\":false,\"parameters\":{\"sampleSize\":8,\"switchPercentageThreshold\":0.075}},\"droppedFramesRule\":{\"active\":false,\"pa"
+    },
+    {
+      "kind": "decision",
+      "t": 0.08959999999962748,
+      "value": 450000.0,
+      "buffer": 0.0,
+      "representation": "0",
+      "boundary": 0,
+      "predictor": "warmup EWMA",
+      "reason": "cold start",
+      "inference_ms": 0.09999999962747097
+    },
+    {
+      "kind": "waiting",
+      "t": 0.1275,
+      "buffer": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 1.0557999999998138,
+      "value": 0.0,
+      "buffer": 0.0
+    },
+    {
+      "kind": "segment",
+      "t": 1.5212999999998138,
+      "throughput": 441175.5407055528,
+      "duration": 1.3917000000001862,
+      "size": 76748,
+      "start": 0.12959999999962746,
+      "first_byte": 0.13609999999962746,
+      "media_start": 0.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00001-0.12959999999962746",
+      "boundary": 0,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 1.5275,
+      "value": 441175.5407055528,
+      "buffer": 1.919999,
+      "representation": "0",
+      "boundary": 1,
+      "predictor": "warmup EWMA",
+      "reason": "low buffer protection (<4 s)",
+      "inference_ms": 0.09999999962747097
+    },
+    {
+      "kind": "playing",
+      "t": 1.5517999999998138,
+      "buffer": 1.91844
+    },
+    {
+      "kind": "rendered",
+      "t": 1.7220999999996274,
+      "value": 300000.0,
+      "representation": "0"
+    },
+    {
+      "kind": "sample",
+      "t": 2.0475,
+      "value": 0.456658,
+      "buffer": 1.463341
+    },
+    {
+      "kind": "sample",
+      "t": 3.0474000000003727,
+      "value": 1.456118,
+      "buffer": 0.5438810000000001
+    },
+    {
+      "kind": "segment",
+      "t": 3.8312000000001865,
+      "throughput": 275038.8809244092,
+      "duration": 2.3019000000003724,
+      "size": 79139,
+      "start": 1.5292999999998138,
+      "first_byte": 1.5437000000001864,
+      "media_start": 2.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00002-1.5292999999998138",
+      "boundary": 1,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 3.8349000000003723,
+      "value": 341493.54483686667,
+      "buffer": 1.6808590000000003,
+      "representation": "0",
+      "boundary": 2,
+      "predictor": "warmup EWMA",
+      "reason": "low buffer protection (<4 s)",
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 4.047299999999813,
+      "value": 2.455848,
+      "buffer": 1.4694850000000002
+    },
+    {
+      "kind": "sample",
+      "t": 5.047700000000186,
+      "value": 3.457092,
+      "buffer": 0.542907
+    },
+    {
+      "kind": "sample",
+      "t": 6.047900000000372,
+      "value": 4.457519,
+      "buffer": 0.0
+    },
+    {
+      "kind": "segment",
+      "t": 6.596099999999628,
+      "throughput": 242188.32650994175,
+      "duration": 2.7600999999996274,
+      "size": 83558,
+      "start": 3.836,
+      "first_byte": 3.8485999999996277,
+      "media_start": 4.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00003-3.836",
+      "boundary": 2,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 6.601099999999628,
+      "value": 281910.4138407117,
+      "buffer": 0.9902429999999995,
+      "representation": "0",
+      "boundary": 3,
+      "predictor": "warmup EWMA",
+      "reason": "low buffer protection (<4 s)",
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 7.047299999999813,
+      "value": 5.456191,
+      "buffer": 0.5438080000000003
+    },
+    {
+      "kind": "segment",
+      "t": 7.7310999999996275,
+      "throughput": 528259.3675261717,
+      "duration": 1.1288999999994411,
+      "size": 74544,
+      "start": 6.602200000000186,
+      "first_byte": 6.618799999999814,
+      "media_start": 6.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00004-6.602200000000186",
+      "boundary": 3,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 7.735599999999628,
+      "value": 429719.7860519877,
+      "buffer": 1.7907029999999997,
+      "representation": "0",
+      "boundary": 4,
+      "predictor": "warmup EWMA",
+      "reason": "low buffer protection (<4 s)",
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 8.048400000000372,
+      "value": 6.457455,
+      "buffer": 1.4785439999999994
+    },
+    {
+      "kind": "segment",
+      "t": 8.577599999999627,
+      "throughput": 740606.4930436602,
+      "duration": 0.8408999999994412,
+      "size": 77847,
+      "start": 7.736700000000186,
+      "first_byte": 7.750700000000187,
+      "media_start": 8.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00005-7.736700000000186",
+      "boundary": 4,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 8.58,
+      "value": 616251.8102469912,
+      "buffer": 2.9318730000000004,
+      "representation": "0",
+      "boundary": 5,
+      "predictor": "EWMA",
+      "reason": "low buffer protection (<4 s)",
+      "features": [
+        441175.5407055528,
+        275038.8809244092,
+        242188.32650994175,
+        528259.3675261717,
+        740606.4930436602,
+        445453.72174194717,
+        181299.90352093082,
+        74857.73808452685,
+        0.8408999999994412,
+        0.005600000000558936,
+        77847.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 9.047599999999628,
+      "value": 7.457136,
+      "buffer": 2.4628630000000005
+    },
+    {
+      "kind": "segment",
+      "t": 9.284,
+      "throughput": 861003.8390447325,
+      "duration": 0.7032999999998137,
+      "size": 75693,
+      "start": 8.580700000000187,
+      "first_byte": 8.588200000000187,
+      "media_start": 10.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00006-8.580700000000187",
+      "boundary": 5,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 9.286900000000372,
+      "value": 761401.7881294771,
+      "buffer": 4.229561,
+      "representation": "0",
+      "boundary": 6,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        275038.8809244092,
+        242188.32650994175,
+        528259.3675261717,
+        740606.4930436602,
+        861003.8390447325,
+        529419.3814097831,
+        245666.7304392674,
+        146491.2395300808,
+        0.7032999999998137,
+        0.003100000000559433,
+        75693.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "segment",
+      "t": 9.982700000000186,
+      "throughput": 869584.2324838355,
+      "duration": 0.6951000000005588,
+      "size": 75556,
+      "start": 9.287599999999628,
+      "first_byte": 9.297799999999814,
+      "media_start": 12.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00007-9.287599999999628",
+      "boundary": 6,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 9.985400000000373,
+      "value": 825974.865064888,
+      "buffer": 5.536290000000001,
+      "representation": "0",
+      "boundary": 7,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        242188.32650994175,
+        528259.3675261717,
+        740606.4930436602,
+        861003.8390447325,
+        869584.2324838355,
+        648328.4517216684,
+        237514.86862529555,
+        156848.97649347346,
+        0.6951000000005588,
+        0.0035999999996274568,
+        75556.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 10.047299999999813,
+      "value": 8.456548,
+      "buffer": 5.474118000000001
+    },
+    {
+      "kind": "segment",
+      "t": 10.5145,
+      "throughput": 1052677.0162813403,
+      "duration": 0.5282000000001863,
+      "size": 69503,
+      "start": 9.986299999999813,
+      "first_byte": 9.998400000000373,
+      "media_start": 14.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00008-9.986299999999813",
+      "boundary": 7,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 10.517400000000373,
+      "value": 964925.5232547655,
+      "buffer": 5.004041000000001,
+      "representation": "0",
+      "boundary": 8,
+      "predictor": "EWMA",
+      "reason": "upgrade waits for two observation boundaries",
+      "features": [
+        528259.3675261717,
+        740606.4930436602,
+        861003.8390447325,
+        869584.2324838355,
+        1052677.0162813403,
+        810426.189675948,
+        172763.50378216783,
+        131104.41218879214,
+        0.5282000000001863,
+        0.0035999999996274568,
+        69503.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 11.047799999999814,
+      "value": 9.457186,
+      "buffer": 6.542813000000001
+    },
+    {
+      "kind": "segment",
+      "t": 11.168,
+      "throughput": 1025775.8620695538,
+      "duration": 0.6495999999996275,
+      "size": 83293,
+      "start": 10.518400000000373,
+      "first_byte": 10.5285,
+      "media_start": 16.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00009-10.518400000000373",
+      "boundary": 8,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 11.172299999999813,
+      "value": 1003610.1611089376,
+      "buffer": 8.338261000000001,
+      "representation": "1",
+      "boundary": 9,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        740606.4930436602,
+        861003.8390447325,
+        869584.2324838355,
+        1052677.0162813403,
+        1025775.8620695538,
+        909929.4885846244,
+        115316.06532035193,
+        71292.3422564734,
+        0.6495999999996275,
+        0.0039000000003728275,
+        83293.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "requested",
+      "t": 11.172700000000185,
+      "value": 600000.0,
+      "representation": "1"
+    },
+    {
+      "kind": "segment",
+      "t": 12.040400000000373,
+      "throughput": 1412736.4825061534,
+      "duration": 0.8489000000003726,
+      "size": 149909,
+      "start": 11.1915,
+      "first_byte": 11.202,
+      "media_start": 8.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00005-11.1915",
+      "boundary": 9,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 12.044,
+      "value": 1250318.822770318,
+      "buffer": 7.547042999999999,
+      "representation": "1",
+      "boundary": 10,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        861003.8390447325,
+        869584.2324838355,
+        1052677.0162813403,
+        1025775.8620695538,
+        1412736.4825061534,
+        1044355.486477123,
+        200140.86358128226,
+        137933.16086535522,
+        0.8489000000003726,
+        0.0235000000000003,
+        149909.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 12.047099999999627,
+      "value": 10.45604,
+      "buffer": 7.543958999999999
+    },
+    {
+      "kind": "segment",
+      "t": 12.77,
+      "throughput": 1578094.5815528664,
+      "duration": 0.7252999999998138,
+      "size": 143074,
+      "start": 12.044700000000187,
+      "first_byte": 12.056400000000373,
+      "media_start": 10.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00006-12.044700000000187",
+      "boundary": 10,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 12.774299999999814,
+      "value": 1447072.1412686636,
+      "buffer": 6.817269,
+      "representation": "1",
+      "boundary": 11,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        869584.2324838355,
+        1052677.0162813403,
+        1025775.8620695538,
+        1412736.4825061534,
+        1578094.5815528664,
+        1187773.63497875,
+        264082.40940026107,
+        177127.5872672577,
+        0.7252999999998138,
+        0.004299999999814119,
+        143074.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "rendered",
+      "t": 12.876799999999815,
+      "value": 600000.0,
+      "representation": "1"
+    },
+    {
+      "kind": "sample",
+      "t": 13.047599999999628,
+      "value": 11.457052,
+      "buffer": 6.542947
+    },
+    {
+      "kind": "segment",
+      "t": 13.4845,
+      "throughput": 1604443.1914285345,
+      "duration": 0.7094000000003725,
+      "size": 142274,
+      "start": 12.775099999999627,
+      "first_byte": 12.785299999999813,
+      "media_start": 12.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00007-12.775099999999627",
+      "boundary": 11,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 13.488299999999814,
+      "value": 1543369.6414706726,
+      "buffer": 6.102293999999999,
+      "representation": "1",
+      "boundary": 12,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1052677.0162813403,
+        1025775.8620695538,
+        1412736.4825061534,
+        1578094.5815528664,
+        1604443.1914285345,
+        1334745.4267676896,
+        250225.13074308413,
+        137941.54378679855,
+        0.7094000000003725,
+        0.005099999999627514,
+        142274.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 14.047200000000187,
+      "value": 12.455132,
+      "buffer": 5.544866999999998
+    },
+    {
+      "kind": "segment",
+      "t": 14.265599999999628,
+      "throughput": 1590922.205050089,
+      "duration": 0.7763999999994412,
+      "size": 154399,
+      "start": 13.489200000000187,
+      "first_byte": 13.5005,
+      "media_start": 14.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00008-13.489200000000187",
+      "boundary": 12,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 14.268400000000373,
+      "value": 1571625.7117991936,
+      "buffer": 5.322994,
+      "representation": "1",
+      "boundary": 13,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1025775.8620695538,
+        1412736.4825061534,
+        1578094.5815528664,
+        1604443.1914285345,
+        1590922.205050089,
+        1442394.4645214393,
+        219629.44118094933,
+        141286.58574513378,
+        0.7763999999994412,
+        0.004700000000186222,
+        154399.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 15.048099999999627,
+      "value": 13.457621,
+      "buffer": 4.542377999999999
+    },
+    {
+      "kind": "segment",
+      "t": 15.088700000000186,
+      "throughput": 1606988.7750111055,
+      "duration": 0.8196000000005588,
+      "size": 164636,
+      "start": 14.269099999999627,
+      "first_byte": 14.279,
+      "media_start": 16.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00009-14.269099999999627",
+      "boundary": 13,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 15.093200000000186,
+      "value": 1596806.0264796116,
+      "buffer": 4.4970089999999985,
+      "representation": "1",
+      "boundary": 14,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1412736.4825061534,
+        1578094.5815528664,
+        1604443.1914285345,
+        1590922.205050089,
+        1606988.7750111055,
+        1558637.0471097499,
+        73680.38310145514,
+        48563.073126238014,
+        0.8196000000005588,
+        0.0034999999999989484,
+        164636.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "segment",
+      "t": 15.837599999999627,
+      "throughput": 1629683.842325176,
+      "duration": 0.7432999999998138,
+      "size": 151418,
+      "start": 15.094299999999814,
+      "first_byte": 15.105900000000373,
+      "media_start": 18.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00010-15.094299999999814",
+      "boundary": 14,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 15.840299999999814,
+      "value": 1618225.9829211887,
+      "buffer": 5.676090999999998,
+      "representation": "1",
+      "boundary": 15,
+      "predictor": "EWMA",
+      "reason": "upgrade waits for two observation boundaries",
+      "features": [
+        1578094.5815528664,
+        1604443.1914285345,
+        1590922.205050089,
+        1606988.7750111055,
+        1629683.842325176,
+        1602026.5190735543,
+        17270.98863488496,
+        12897.315193077433,
+        0.7432999999998138,
+        0.005599999999628125,
+        151418.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 16.047799999999814,
+      "value": 14.45675,
+      "buffer": 5.468582999999999
+    },
+    {
+      "kind": "segment",
+      "t": 16.605299999999815,
+      "throughput": 1573783.5361871303,
+      "duration": 0.7640999999996275,
+      "size": 150316,
+      "start": 15.841200000000187,
+      "first_byte": 15.848200000000187,
+      "media_start": 20.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00011-15.841200000000187",
+      "boundary": 15,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 16.609,
+      "value": 1591830.3246458806,
+      "buffer": 6.912341999999999,
+      "representation": "1",
+      "boundary": 16,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1604443.1914285345,
+        1590922.205050089,
+        1606988.7750111055,
+        1629683.842325176,
+        1573783.5361871303,
+        1601164.310000407,
+        18507.548019828402,
+        -7664.913810351049,
+        0.7640999999996275,
+        0.003600000000560044,
+        150316.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 17.048900000000373,
+      "value": 15.45815,
+      "buffer": 6.541848999999999
+    },
+    {
+      "kind": "segment",
+      "t": 17.276099999999627,
+      "throughput": 1585712.141678366,
+      "duration": 0.6662999999998137,
+      "size": 132070,
+      "start": 16.609799999999815,
+      "first_byte": 16.620099999999628,
+      "media_start": 22.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00012-16.609799999999815",
+      "boundary": 16,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 17.2795,
+      "value": 1588020.9599648565,
+      "buffer": 8.246982,
+      "representation": "1",
+      "boundary": 17,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1590922.205050089,
+        1606988.7750111055,
+        1629683.842325176,
+        1573783.5361871303,
+        1585712.141678366,
+        1597418.1000503735,
+        19341.6372937535,
+        -1302.5158429307048,
+        0.6662999999998137,
+        0.0045000000000001705,
+        132070.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "segment",
+      "t": 17.988799999999813,
+      "throughput": 1675009.1743119266,
+      "duration": 0.7085,
+      "size": 148343,
+      "start": 17.280299999999812,
+      "first_byte": 17.291400000000372,
+      "media_start": 24.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00013-17.280299999999812",
+      "boundary": 17,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 17.992099999999628,
+      "value": 1640378.4102494994,
+      "buffer": 9.518884,
+      "representation": "1",
+      "boundary": 18,
+      "predictor": "EWMA",
+      "reason": "upgrade waits for two observation boundaries",
+      "features": [
+        1606988.7750111055,
+        1629683.842325176,
+        1573783.5361871303,
+        1585712.141678366,
+        1675009.1743119266,
+        1614235.4939027408,
+        35873.52544508131,
+        17005.09982520528,
+        0.7085,
+        0.004200000000185611,
+        148343.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 18.048299999999813,
+      "value": 16.457431,
+      "buffer": 9.462568000000001
+    },
+    {
+      "kind": "segment",
+      "t": 18.690299999999812,
+      "throughput": 1780751.362203893,
+      "duration": 0.6973999999994412,
+      "size": 155237,
+      "start": 17.992900000000372,
+      "first_byte": 18.004200000000186,
+      "media_start": 26.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00014-17.992900000000372",
+      "boundary": 18,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "sample",
+      "t": 19.048200000000186,
+      "value": 17.457042,
+      "buffer": 10.542956999999998
+    },
+    {
+      "kind": "sample",
+      "t": 20.049299999999814,
+      "value": 18.458446,
+      "buffer": 9.541553
+    },
+    {
+      "kind": "decision",
+      "t": 20.19609999999963,
+      "value": 1724834.5789114316,
+      "buffer": 9.394207999999999,
+      "representation": "2",
+      "boundary": 19,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1629683.842325176,
+        1573783.5361871303,
+        1585712.141678366,
+        1675009.1743119266,
+        1780751.362203893,
+        1648988.0113412985,
+        74927.80693320806,
+        37766.87996967923,
+        0.6973999999994412,
+        0.004100000000558879,
+        155237.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "requested",
+      "t": 20.19609999999963,
+      "value": 1200000.0,
+      "representation": "2"
+    },
+    {
+      "kind": "sample",
+      "t": 21.047599999999626,
+      "value": 19.456471,
+      "buffer": 8.543527999999998
+    },
+    {
+      "kind": "segment",
+      "t": 21.48690000000037,
+      "throughput": 2123171.819960861,
+      "duration": 1.2775,
+      "size": 339044,
+      "start": 20.20940000000037,
+      "first_byte": 20.217200000000187,
+      "media_start": 18.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00010-20.20940000000037",
+      "boundary": 19,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 21.4925,
+      "value": 1963264.5044062356,
+      "buffer": 8.098769999999998,
+      "representation": "2",
+      "boundary": 20,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1573783.5361871303,
+        1585712.141678366,
+        1675009.1743119266,
+        1780751.362203893,
+        2123171.819960861,
+        1747685.6068684354,
+        201912.07881672645,
+        137347.0709434327,
+        1.2775,
+        1.5191000000005594,
+        339044.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 22.047599999999626,
+      "value": 20.457058,
+      "buffer": 7.542940999999999
+    },
+    {
+      "kind": "segment",
+      "t": 22.5615,
+      "throughput": 2063937.096321618,
+      "duration": 1.0682999999998137,
+      "size": 275613,
+      "start": 21.493200000000186,
+      "first_byte": 21.504900000000372,
+      "media_start": 20.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00011-21.493200000000186",
+      "boundary": 20,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 22.565900000000372,
+      "value": 2023790.2084756952,
+      "buffer": 7.024540999999999,
+      "representation": "2",
+      "boundary": 21,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1585712.141678366,
+        1675009.1743119266,
+        1780751.362203893,
+        2123171.819960861,
+        2063937.096321618,
+        1845716.318895333,
+        212398.4038320759,
+        119556.23866081296,
+        1.0682999999998137,
+        0.006299999999814787,
+        275613.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "rendered",
+      "t": 22.704799999999814,
+      "value": 1200000.0,
+      "representation": "2"
+    },
+    {
+      "kind": "sample",
+      "t": 23.047099999999627,
+      "value": 21.456287,
+      "buffer": 6.543711999999999
+    },
+    {
+      "kind": "segment",
+      "t": 23.732,
+      "throughput": 1864311.7061445697,
+      "duration": 1.1652000000001863,
+      "size": 271537,
+      "start": 22.566799999999812,
+      "first_byte": 22.577599999999627,
+      "media_start": 22.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00012-22.566799999999812",
+      "boundary": 21,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 23.736200000000185,
+      "value": 1929017.5086911875,
+      "buffer": 5.854661,
+      "representation": "2",
+      "boundary": 22,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1675009.1743119266,
+        1780751.362203893,
+        2123171.819960861,
+        2063937.096321618,
+        1864311.7061445697,
+        1901436.2317885738,
+        168988.45081519242,
+        47325.63295816077,
+        1.1652000000001863,
+        0.005299999999813565,
+        271537.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 24.048200000000186,
+      "value": 22.457824,
+      "buffer": 5.542175
+    },
+    {
+      "kind": "sample",
+      "t": 25.047700000000187,
+      "value": 23.456724,
+      "buffer": 4.543274999999998
+    },
+    {
+      "kind": "segment",
+      "t": 25.489700000000187,
+      "throughput": 1330368.0036513677,
+      "duration": 1.7527000000001862,
+      "size": 291467,
+      "start": 23.737,
+      "first_byte": 23.7475,
+      "media_start": 24.0,
+      "media_duration": 2.0,
+      "representation": "2",
+      "request_id": "2-00013-23.737",
+      "boundary": 22,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 25.493799999999815,
+      "value": 1570910.6056713094,
+      "buffer": 4.097994,
+      "representation": "1",
+      "boundary": 23,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1780751.362203893,
+        2123171.819960861,
+        2063937.096321618,
+        1864311.7061445697,
+        1330368.0036513677,
+        1832507.997656462,
+        280670.512905069,
+        -112595.83963813132,
+        1.7527000000001862,
+        0.004999999999999005,
+        291467.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "requested",
+      "t": 25.493900000000373,
+      "value": 600000.0,
+      "representation": "1"
+    },
+    {
+      "kind": "sample",
+      "t": 26.0475,
+      "value": 24.456346,
+      "buffer": 3.543652999999999
+    },
+    {
+      "kind": "segment",
+      "t": 26.750299999999815,
+      "throughput": 1001609.807242971,
+      "duration": 1.2398999999994411,
+      "size": 155237,
+      "start": 25.510400000000374,
+      "first_byte": 25.520700000000186,
+      "media_start": 26.0,
+      "media_duration": 2.0,
+      "representation": "1",
+      "request_id": "1-00014-25.510400000000374",
+      "boundary": 23,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 26.754700000000188,
+      "value": 1232836.5121017378,
+      "buffer": 2.835763,
+      "representation": "0",
+      "boundary": 24,
+      "predictor": "EWMA",
+      "reason": "low buffer protection (<4 s)",
+      "features": [
+        2123171.819960861,
+        2063937.096321618,
+        1864311.7061445697,
+        1330368.0036513677,
+        1001609.807242971,
+        1676679.6866642772,
+        438219.2202671242,
+        -280390.5031794725,
+        1.2398999999994411,
+        0.020700000000186236,
+        155237.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "requested",
+      "t": 26.754799999999815,
+      "value": 300000.0,
+      "representation": "0"
+    },
+    {
+      "kind": "sample",
+      "t": 27.048,
+      "value": 25.457219,
+      "buffer": 2.5427800000000005
+    },
+    {
+      "kind": "rendered",
+      "t": 27.764099999999626,
+      "value": 600000.0,
+      "representation": "1"
+    },
+    {
+      "kind": "segment",
+      "t": 27.91990000000037,
+      "throughput": 560995.0421848269,
+      "duration": 1.1497000000001862,
+      "size": 80622,
+      "start": 26.770200000000187,
+      "first_byte": 26.78109999999963,
+      "media_start": 28.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00015-26.770200000000187",
+      "boundary": 24,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 27.923299999999813,
+      "value": 829125.0665815254,
+      "buffer": 3.598583999999999,
+      "representation": "0",
+      "boundary": 25,
+      "predictor": "EWMA",
+      "reason": "low buffer protection (<4 s)",
+      "features": [
+        2063937.096321618,
+        1864311.7061445697,
+        1330368.0036513677,
+        1001609.807242971,
+        560995.0421848269,
+        1364244.3311090707,
+        550908.0084523355,
+        -375735.51353419776,
+        1.1497000000001862,
+        0.01990000000037284,
+        80622.0
+      ],
+      "inference_ms": 0.09999999962747097
+    },
+    {
+      "kind": "sample",
+      "t": 28.0485,
+      "value": 26.457951,
+      "buffer": 3.4727149999999973
+    },
+    {
+      "kind": "sample",
+      "t": 29.049,
+      "value": 27.458422,
+      "buffer": 2.541577
+    },
+    {
+      "kind": "segment",
+      "t": 29.320099999999627,
+      "throughput": 431759.3123209169,
+      "duration": 1.396,
+      "size": 75342,
+      "start": 27.924099999999626,
+      "first_byte": 27.936200000000188,
+      "media_start": 30.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00016-27.924099999999626",
+      "boundary": 25,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 29.323099999999627,
+      "value": 588661.4500297473,
+      "buffer": 4.2039089999999995,
+      "representation": "0",
+      "boundary": 26,
+      "predictor": "EWMA",
+      "reason": "80% forecast less 80 kbps audio/overhead reserve",
+      "features": [
+        1864311.7061445697,
+        1330368.0036513677,
+        1001609.807242971,
+        560995.0421848269,
+        431759.3123209169,
+        1037808.7743089305,
+        522428.10983733786,
+        -358138.0984559132,
+        1.396,
+        0.0041999999992548,
+        75342.0
+      ],
+      "inference_ms": 0.09999999962747097
+    },
+    {
+      "kind": "rendered",
+      "t": 29.611099999999627,
+      "value": 300000.0,
+      "representation": "0"
+    },
+    {
+      "kind": "sample",
+      "t": 30.047200000000185,
+      "value": 28.456738,
+      "buffer": 3.5432609999999976
+    },
+    {
+      "kind": "segment",
+      "t": 30.907200000000188,
+      "throughput": 392259.69432856754,
+      "duration": 1.5834000000003725,
+      "size": 77638,
+      "start": 29.323799999999814,
+      "first_byte": 29.335299999999815,
+      "media_start": 32.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00017-29.323799999999814",
+      "boundary": 26,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 30.910599999999626,
+      "value": 465352.8130955091,
+      "buffer": 4.600155999999998,
+      "representation": "0",
+      "boundary": 27,
+      "predictor": "EWMA",
+      "reason": "no sustainable representation",
+      "features": [
+        1330368.0036513677,
+        1001609.807242971,
+        560995.0421848269,
+        431759.3123209169,
+        392259.69432856754,
+        743398.3719457301,
+        364662.7875101449,
+        -234527.07733070006,
+        1.5834000000003725,
+        0.003700000000186776,
+        77638.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 31.047599999999626,
+      "value": 29.45649,
+      "buffer": 4.463508999999998
+    },
+    {
+      "kind": "sample",
+      "t": 32.048200000000186,
+      "value": 30.456756,
+      "buffer": 3.543243000000004
+    },
+    {
+      "kind": "segment",
+      "t": 32.34259999999963,
+      "throughput": 428546.674119843,
+      "duration": 1.4311999999992548,
+      "size": 76667,
+      "start": 30.911400000000373,
+      "first_byte": 30.922200000000185,
+      "media_start": 34.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00018-30.911400000000373",
+      "boundary": 27,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 32.34559999999963,
+      "value": 439902.64577888744,
+      "buffer": 5.1700180000000024,
+      "representation": "0",
+      "boundary": 28,
+      "predictor": "EWMA",
+      "reason": "no sustainable representation",
+      "features": [
+        1001609.807242971,
+        560995.0421848269,
+        431759.3123209169,
+        392259.69432856754,
+        428546.674119843,
+        563034.1060394251,
+        226643.61626700882,
+        -143265.783280782,
+        1.4311999999992548,
+        0.004200000000185611,
+        76667.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 33.04840000000037,
+      "value": 31.458007,
+      "buffer": 4.4673260000000035
+    },
+    {
+      "kind": "segment",
+      "t": 33.75959999999963,
+      "throughput": 429844.3249365413,
+      "duration": 1.413199999999255,
+      "size": 75932,
+      "start": 32.34640000000037,
+      "first_byte": 32.360200000000184,
+      "media_start": 36.0,
+      "media_duration": 2.0,
+      "representation": "0",
+      "request_id": "0-00019-32.34640000000037",
+      "boundary": 28,
+      "timing_source": "same-origin ResourceTiming encodedBodySize / request duration"
+    },
+    {
+      "kind": "decision",
+      "t": 33.762200000000185,
+      "value": 429355.75807928434,
+      "buffer": 5.759473,
+      "representation": "0",
+      "boundary": 29,
+      "predictor": "EWMA",
+      "reason": "no sustainable representation",
+      "features": [
+        560995.0421848269,
+        431759.3123209169,
+        392259.69432856754,
+        428546.674119843,
+        429844.3249365413,
+        448681.0095781392,
+        58041.989499959345,
+        -32787.6793120714,
+        1.413199999999255,
+        0.003800000000744319,
+        75932.0
+      ],
+      "inference_ms": 0.0
+    },
+    {
+      "kind": "sample",
+      "t": 34.05959999999963,
+      "value": 32.468313,
+      "buffer": 5.462353
+    },
+    {
+      "kind": "ended",
+      "t": 34.070200000000185,
+      "reason": "session finished"
+    }
+  ],
+  "delivery": [
+    {
+      "request_id": "d992db0a8a3d42be8c7ea7f43a098d6f",
+      "asset": "init-0.mp4",
+      "bytes": 837,
+      "status": "complete",
+      "range": [
+        0,
+        836
+      ],
+      "start_s": 0.0,
+      "duration_s": 0.02161340000020573
+    },
+    {
+      "request_id": "6ab928e0d52c468db32c4290018b0a07",
+      "asset": "init-4.mp4",
+      "bytes": 764,
+      "status": "complete",
+      "range": [
+        0,
+        763
+      ],
+      "start_s": 0.0029148000003260677,
+      "duration_s": 0.030403499999920314
+    },
+    {
+      "request_id": "f43ab79b60304a67865f70b077feddb5",
+      "asset": "chunk-4-00001.m4s",
+      "bytes": 16290,
+      "status": "complete",
+      "range": [
+        0,
+        16289
+      ],
+      "start_s": 0.04271980000066833,
+      "duration_s": 0.49042759999974805
+    },
+    {
+      "request_id": "e6ccc64ebc7e44b997a8319cf4edf5f0",
+      "asset": "chunk-0-00001.m4s",
+      "bytes": 76748,
+      "status": "complete",
+      "range": [
+        0,
+        76747
+      ],
+      "start_s": 0.03561119999994844,
+      "duration_s": 1.385106500000802
+    },
+    {
+      "request_id": "e0e2de94c76e4f99bb64b7c54c6d4525",
+      "asset": "chunk-4-00002.m4s",
+      "bytes": 16646,
+      "status": "complete",
+      "range": [
+        0,
+        16645
+      ],
+      "start_s": 1.5613829000003534,
+      "duration_s": 0.7622107999995933
+    },
+    {
+      "request_id": "fb4ccef5b5e24bde993baa5a829dff2a",
+      "asset": "chunk-0-00002.m4s",
+      "bytes": 79139,
+      "status": "complete",
+      "range": [
+        0,
+        79138
+      ],
+      "start_s": 1.443164300000717,
+      "duration_s": 2.2864989999998215
+    },
+    {
+      "request_id": "24e40328373a472fa21f6d588551c9e8",
+      "asset": "chunk-4-00003.m4s",
+      "bytes": 16612,
+      "status": "complete",
+      "range": [
+        0,
+        16611
+      ],
+      "start_s": 3.843900200000462,
+      "duration_s": 1.0701639999997496
+    },
+    {
+      "request_id": "25489460c9e74cd9b9ff0e8aff0e620f",
+      "asset": "chunk-0-00003.m4s",
+      "bytes": 83558,
+      "status": "complete",
+      "range": [
+        0,
+        83557
+      ],
+      "start_s": 3.7480593999998746,
+      "duration_s": 2.747439500000837
+    },
+    {
+      "request_id": "faca3017aa2b48faa7f72c15eec9a1b2",
+      "asset": "chunk-4-00004.m4s",
+      "bytes": 16656,
+      "status": "complete",
+      "range": [
+        0,
+        16655
+      ],
+      "start_s": 5.929455400000734,
+      "duration_s": 0.5681489999997211
+    },
+    {
+      "request_id": "b0cf01c2c3684bfea6f1e53a1161beaa",
+      "asset": "chunk-0-00004.m4s",
+      "bytes": 74544,
+      "status": "complete",
+      "range": [
+        0,
+        74543
+      ],
+      "start_s": 6.518387000000075,
+      "duration_s": 1.112096400000155
+    },
+    {
+      "request_id": "5828850addd94239945217adea690003",
+      "asset": "chunk-4-00005.m4s",
+      "bytes": 16454,
+      "status": "complete",
+      "range": [
+        0,
+        16453
+      ],
+      "start_s": 8.015893600000709,
+      "duration_s": 0.27333789999920555
+    },
+    {
+      "request_id": "52e39d921aa0418cb68b125ebddc51fa",
+      "asset": "chunk-0-00005.m4s",
+      "bytes": 77847,
+      "status": "complete",
+      "range": [
+        0,
+        77846
+      ],
+      "start_s": 7.650254400000449,
+      "duration_s": 0.8268798999997671
+    },
+    {
+      "request_id": "fe5b63f4a15148808ec82367e8d2811f",
+      "asset": "chunk-4-00006.m4s",
+      "bytes": 16552,
+      "status": "complete",
+      "range": [
+        0,
+        16551
+      ],
+      "start_s": 8.80016810000052,
+      "duration_s": 0.27291349999995873
+    },
+    {
+      "request_id": "63896fd770794ca7a25f022f0ea23434",
+      "asset": "chunk-0-00006.m4s",
+      "bytes": 75693,
+      "status": "complete",
+      "range": [
+        0,
+        75692
+      ],
+      "start_s": 8.487709600000017,
+      "duration_s": 0.695700900000702
+    },
+    {
+      "request_id": "12815f2f81f8476596e60962330fc1c0",
+      "asset": "chunk-4-00007.m4s",
+      "bytes": 16700,
+      "status": "complete",
+      "range": [
+        0,
+        16699
+      ],
+      "start_s": 9.588738100000228,
+      "duration_s": 0.26311619999978575
+    },
+    {
+      "request_id": "6b97e692faf946ad8f10a7bf91d4349b",
+      "asset": "chunk-0-00007.m4s",
+      "bytes": 75556,
+      "status": "complete",
+      "range": [
+        0,
+        75555
+      ],
+      "start_s": 9.1972624,
+      "duration_s": 0.6848312000001897
+    },
+    {
+      "request_id": "99ac235e9036481bad976f7e7338a905",
+      "asset": "chunk-0-00008.m4s",
+      "bytes": 69503,
+      "status": "complete",
+      "range": [
+        0,
+        69502
+      ],
+      "start_s": 9.898010200000499,
+      "duration_s": 0.5159389999998893
+    },
+    {
+      "request_id": "e00d23f06ffc4ddaa3f4a6a189db35de",
+      "asset": "chunk-4-00008.m4s",
+      "bytes": 16634,
+      "status": "complete",
+      "range": [
+        0,
+        16633
+      ],
+      "start_s": 10.366118100000676,
+      "duration_s": 0.2031751999993503
+    },
+    {
+      "request_id": "6650f275d84a40bfb9b42445fd094da6",
+      "asset": "chunk-4-00009.m4s",
+      "bytes": 16489,
+      "status": "complete",
+      "range": [
+        0,
+        16488
+      ],
+      "start_s": 10.58625579999989,
+      "duration_s": 0.21715510000012728
+    },
+    {
+      "request_id": "e7e4b0b8b05349f88c514cfd78f3c5a9",
+      "asset": "chunk-0-00009.m4s",
+      "bytes": 83293,
+      "status": "complete",
+      "range": [
+        0,
+        83292
+      ],
+      "start_s": 10.428087700000106,
+      "duration_s": 0.6391503000004377
+    },
+    {
+      "request_id": "4dad3aafd2cc412ead78a9b5d06ff010",
+      "asset": "init-1.mp4",
+      "bytes": 833,
+      "status": "complete",
+      "range": [
+        0,
+        832
+      ],
+      "start_s": 11.085681900000054,
+      "duration_s": 0.0011190000004717149
+    },
+    {
+      "request_id": "d48f7b25094f4f1f97a21ae8f0dbae36",
+      "asset": "chunk-4-00010.m4s",
+      "bytes": 16655,
+      "status": "complete",
+      "range": [
+        0,
+        16654
+      ],
+      "start_s": 11.318126600000141,
+      "duration_s": 0.185122599999886
+    },
+    {
+      "request_id": "cf0885cceb5944a9b5418c16e0f92444",
+      "asset": "chunk-1-00005.m4s",
+      "bytes": 149909,
+      "status": "complete",
+      "range": [
+        0,
+        149908
+      ],
+      "start_s": 11.10154540000076,
+      "duration_s": 0.8385250999999698
+    },
+    {
+      "request_id": "7f43b54e2b08441b91a968a3e1ef4e64",
+      "asset": "chunk-1-00006.m4s",
+      "bytes": 143074,
+      "status": "complete",
+      "range": [
+        0,
+        143073
+      ],
+      "start_s": 11.955985100000362,
+      "duration_s": 0.7134027000001879
+    },
+    {
+      "request_id": "7902cb3b120c43a589a55c8fd9d2a86d",
+      "asset": "chunk-1-00007.m4s",
+      "bytes": 142274,
+      "status": "complete",
+      "range": [
+        0,
+        142273
+      ],
+      "start_s": 12.68483020000076,
+      "duration_s": 0.6988306999992346
+    },
+    {
+      "request_id": "a665e72e1c344c66a6acca67b2a0824e",
+      "asset": "chunk-1-00008.m4s",
+      "bytes": 154399,
+      "status": "complete",
+      "range": [
+        0,
+        154398
+      ],
+      "start_s": 13.400103400000262,
+      "duration_s": 0.7649592999996457
+    },
+    {
+      "request_id": "8ba12fff7e654d6eb0a551dbc6e58528",
+      "asset": "chunk-1-00009.m4s",
+      "bytes": 164636,
+      "status": "complete",
+      "range": [
+        0,
+        164635
+      ],
+      "start_s": 14.178483400000005,
+      "duration_s": 0.8094644000002518
+    },
+    {
+      "request_id": "66adc26138634fd8946f9f35a8609ab3",
+      "asset": "chunk-1-00010.m4s",
+      "bytes": 151418,
+      "status": "complete",
+      "range": [
+        0,
+        151417
+      ],
+      "start_s": 15.005337900000086,
+      "duration_s": 0.7316848000000391
+    },
+    {
+      "request_id": "c1ba27ba17c84955b1259c687fa3f4e1",
+      "asset": "chunk-4-00011.m4s",
+      "bytes": 16719,
+      "status": "complete",
+      "range": [
+        0,
+        16718
+      ],
+      "start_s": 16.036181800000122,
+      "duration_s": 0.15536380000048666
+    },
+    {
+      "request_id": "45c7e291e1dd45b6a2b86cc45f9bfcc0",
+      "asset": "chunk-1-00011.m4s",
+      "bytes": 150316,
+      "status": "complete",
+      "range": [
+        0,
+        150315
+      ],
+      "start_s": 15.747710600000573,
+      "duration_s": 0.7571410999998989
+    },
+    {
+      "request_id": "fa25e28305204b6b8cb18e7e9c33bff2",
+      "asset": "chunk-4-00012.m4s",
+      "bytes": 16685,
+      "status": "complete",
+      "range": [
+        0,
+        16684
+      ],
+      "start_s": 16.707254400000238,
+      "duration_s": 0.15701569999964704
+    },
+    {
+      "request_id": "2d4b4070dad74662bff63dafe159336d",
+      "asset": "chunk-1-00012.m4s",
+      "bytes": 132070,
+      "status": "complete",
+      "range": [
+        0,
+        132069
+      ],
+      "start_s": 16.51967490000061,
+      "duration_s": 0.6557359999997061
+    },
+    {
+      "request_id": "8f785787ed9e4c56bec8b863ff267e13",
+      "asset": "chunk-4-00013.m4s",
+      "bytes": 16499,
+      "status": "complete",
+      "range": [
+        0,
+        16498
+      ],
+      "start_s": 17.380327700000635,
+      "duration_s": 0.15089669999997568
+    },
+    {
+      "request_id": "367239ec48e54fd6affaba8edff86468",
+      "asset": "chunk-1-00013.m4s",
+      "bytes": 148343,
+      "status": "complete",
+      "range": [
+        0,
+        148342
+      ],
+      "start_s": 17.190955200000644,
+      "duration_s": 0.6971682999992481
+    },
+    {
+      "request_id": "3fa2ba4440df4a83840e04e3be2a1ee5",
+      "asset": "chunk-4-00014.m4s",
+      "bytes": 16750,
+      "status": "complete",
+      "range": [
+        0,
+        16749
+      ],
+      "start_s": 18.046189900000172,
+      "duration_s": 0.13978529999985767
+    },
+    {
+      "request_id": "7e0a6491ff8c4a68abee70444cc24f31",
+      "asset": "chunk-1-00014.m4s",
+      "bytes": 155237,
+      "status": "complete",
+      "range": [
+        0,
+        155236
+      ],
+      "start_s": 17.9036329999999,
+      "duration_s": 0.6861299000001964
+    },
+    {
+      "request_id": "c2068ccc4793458fb69f0639b59c80f3",
+      "asset": "chunk-4-00015.m4s",
+      "bytes": 16657,
+      "status": "complete",
+      "range": [
+        0,
+        16656
+      ],
+      "start_s": 18.70311690000017,
+      "duration_s": 0.058042000000568805
+    },
+    {
+      "request_id": "0b780986adb842a68b37316397b7e6ce",
+      "asset": "init-2.mp4",
+      "bytes": 837,
+      "status": "complete",
+      "range": [
+        0,
+        836
+      ],
+      "start_s": 20.104808300000514,
+      "duration_s": 0.00048460000016348204
+    },
+    {
+      "request_id": "1692712bd40145e79a5677a874175fac",
+      "asset": "chunk-2-00010.m4s",
+      "bytes": 339044,
+      "status": "complete",
+      "range": [
+        0,
+        339043
+      ],
+      "start_s": 20.1167288000006,
+      "duration_s": 1.2695917000000918
+    },
+    {
+      "request_id": "ccf46cff890542209f9f7eae0370e9b0",
+      "asset": "chunk-2-00011.m4s",
+      "bytes": 275613,
+      "status": "complete",
+      "range": [
+        0,
+        275612
+      ],
+      "start_s": 21.40435179999986,
+      "duration_s": 1.0564092000004166
+    },
+    {
+      "request_id": "b2e1983b9b99490a922515a5d54ceca2",
+      "asset": "chunk-2-00012.m4s",
+      "bytes": 271537,
+      "status": "complete",
+      "range": [
+        0,
+        271536
+      ],
+      "start_s": 22.477004299999862,
+      "duration_s": 1.1544158000006064
+    },
+    {
+      "request_id": "0affdd5f10e84e249df8d9fb37e4244c",
+      "asset": "chunk-2-00013.m4s",
+      "bytes": 291467,
+      "status": "complete",
+      "range": [
+        0,
+        291466
+      ],
+      "start_s": 23.64691160000075,
+      "duration_s": 1.7421596999993199
+    },
+    {
+      "request_id": "fa7ae5bd80f54316a76968142a1ce9e5",
+      "asset": "init-1.mp4",
+      "bytes": 833,
+      "status": "complete",
+      "range": [
+        0,
+        832
+      ],
+      "start_s": 25.405216300000575,
+      "duration_s": 0.0008637999999336898
+    },
+    {
+      "request_id": "0407962fb1494c9eb2a45cbe142763f6",
+      "asset": "chunk-1-00014.m4s",
+      "bytes": 155237,
+      "status": "complete",
+      "range": [
+        0,
+        155236
+      ],
+      "start_s": 25.420106000000487,
+      "duration_s": 1.229577999999492
+    },
+    {
+      "request_id": "a74c5c1193c94e20aaf942a3c0017393",
+      "asset": "init-0.mp4",
+      "bytes": 837,
+      "status": "complete",
+      "range": [
+        0,
+        836
+      ],
+      "start_s": 26.66525770000044,
+      "duration_s": 0.000804700000117009
+    },
+    {
+      "request_id": "ac58279dcebb4fe1ab54049804e577e9",
+      "asset": "chunk-0-00015.m4s",
+      "bytes": 80622,
+      "status": "complete",
+      "range": [
+        0,
+        80621
+      ],
+      "start_s": 26.680554600000505,
+      "duration_s": 1.1388121999998475
+    },
+    {
+      "request_id": "762bb6dc55b5402f9fb1ee68aa318e0b",
+      "asset": "chunk-4-00016.m4s",
+      "bytes": 16687,
+      "status": "complete",
+      "range": [
+        0,
+        16686
+      ],
+      "start_s": 28.29341629999999,
+      "duration_s": 0.5230402000006507
+    },
+    {
+      "request_id": "bc34d115dbfd4c04b4a9e286d45b2e41",
+      "asset": "chunk-0-00016.m4s",
+      "bytes": 75342,
+      "status": "complete",
+      "range": [
+        0,
+        75341
+      ],
+      "start_s": 27.835736400000314,
+      "duration_s": 1.3834850000002916
+    },
+    {
+      "request_id": "c188fc94584042418f51cb23cd118830",
+      "asset": "chunk-4-00017.m4s",
+      "bytes": 16465,
+      "status": "complete",
+      "range": [
+        0,
+        16464
+      ],
+      "start_s": 29.332439100000556,
+      "duration_s": 0.6042985999993107
+    },
+    {
+      "request_id": "d277997387fc4074bdc4006e0c9a9c8c",
+      "asset": "chunk-0-00017.m4s",
+      "bytes": 77638,
+      "status": "complete",
+      "range": [
+        0,
+        77637
+      ],
+      "start_s": 29.234917499999938,
+      "duration_s": 1.5734030000003258
+    },
+    {
+      "request_id": "f81128c4708a4da2a845b219a8e607df",
+      "asset": "chunk-4-00018.m4s",
+      "bytes": 16725,
+      "status": "complete",
+      "range": [
+        0,
+        16724
+      ],
+      "start_s": 30.954727600000297,
+      "duration_s": 0.5214045000002443
+    },
+    {
+      "request_id": "257515abf62b42b7a9ae615289e06aec",
+      "asset": "chunk-0-00018.m4s",
+      "bytes": 76667,
+      "status": "complete",
+      "range": [
+        0,
+        76666
+      ],
+      "start_s": 30.821776700000555,
+      "duration_s": 1.4203239999997095
+    },
+    {
+      "request_id": "71953c81b6d64cfd8811f3ffb0c96170",
+      "asset": "chunk-4-00019.m4s",
+      "bytes": 16673,
+      "status": "complete",
+      "range": [
+        0,
+        16672
+      ],
+      "start_s": 32.49414550000074,
+      "duration_s": 0.5383416999993642
+    },
+    {
+      "request_id": "9864b1b42785410dabda2a7ff61f97e2",
+      "asset": "chunk-0-00019.m4s",
+      "bytes": 75932,
+      "status": "complete",
+      "range": [
+        0,
+        75931
+      ],
+      "start_s": 32.25941850000072,
+      "duration_s": 1.3996968999999808
+    },
+    {
+      "request_id": "d3d7bad37de64dda8ba9d34a07affb50",
+      "asset": "chunk-0-00020.m4s",
+      "bytes": 20480,
+      "status": "aborted",
+      "range": [
+        0,
+        69615
+      ],
+      "start_s": 33.67258970000057,
+      "duration_s": 0.3052419999994527
+    }
+  ]
+}
